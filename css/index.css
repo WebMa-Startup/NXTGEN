@@ -1,0 +1,66 @@
+/*  CSS IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=VT323&display=swap');
+
+/* Global Reset */
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+/*  End Global Reset */
+body {
+
+    background-color:black;
+    color: white !important;
+}
+
+/*                            navbar CSS                    */
+.navbar-brand>.brand-img {
+
+    height: 2.3em;
+    width: 9em;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+}
+
+.nav-container>button {
+    border: none !important;
+}
+
+.nav-container {
+    background-color: black;
+    margin-top:10px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 15px 1px  #ffdf00; */
+    box-shadow: 0px 0px 15px 1px #FFD700,0px 0px 6px .7px #FFD700,0px 0px 6px .5px #FFD700;
+    position:sticky;
+    top : 0;
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+.navbar-link .nav-link {
+    color: white !important;
+    font-family: 'Bacasime Antique', serif;
+    /* font-family: 'VT323', monospace; */
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+.navbar-nav a{
+    text-align:center;
+}
+.navbar-nav a:hover{
+ background-color:#0c0c0cce;
+ border-radius:10px;
+}
+/*                          End Of Nav CSS                  */
