@@ -1,10 +1,13 @@
 /*  CSS IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Chela+One&family=Cormorant+Garamond:ital@1&family=Lilita+One&family=VT323&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Lilita+One&family=VT323&display=swap');
-
-  /* font-family: 'Bacasime Antique', serif;
-  font-family: 'Lilita One', cursive;
-  font-family: 'VT323', monospace; */
+/*
+font-family: 'Bacasime Antique', serif;
+font-family: 'Chela One', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Lilita One', cursive;
+font-family: 'VT323', monospace;
+ */
 
 /* Global Reset */
 * {
@@ -14,9 +17,9 @@
 }
 
 /*  End Global Reset */
-.header{
+.header {
 
-    background-color:black !important;
+    background-color: black !important;
     color: white !important;
 }
 
@@ -37,14 +40,14 @@
 
 .nav-container {
     background-color: black;
-    margin-top:10px;
+    margin-top: 10px;
     border-radius: 20px;
     cursor: pointer;
     /* box-shadow: 0px 0px 15px 1px  #ffdf00; */
-    box-shadow: 0px 0px 10px 1px #FFD700,0px 0px 6px 1px #ffbb00,0px 0px 6px 1px #ffc400;
-    position:sticky;
-    position:-webkit-sticky;
-    top : 0;
+    box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 .navbar-link {
@@ -61,13 +64,16 @@
     font-weight: bolder;
     font-size: 1.3em;
 }
-.navbar-nav a{
-    text-align:center;
+
+.navbar-nav a {
+    text-align: center;
 }
-.navbar-nav a:hover{
- background-color:#0c0c0cce;
- border-radius:10px;
+
+.navbar-nav a:hover {
+    background-color: #0c0c0cce;
+    border-radius: 10px;
 }
+
 /*                          End Of Nav CSS                  */
 
 
@@ -75,44 +81,300 @@
 
 /* todo  content-holder */
 
-.content-holder{
+.content-holder {
     height: 75vh;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url(../assets/hero-bg-01.gif);
-    background-size:contain;
+    background: url(../assets/log-in-girl.svg);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.main-text{
-    height:4.5em;
-    text-align: center;
-    font-family: 'Lilita One', cursive;
-    font-size:2em;
+
+.sub-holder {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
 }
-.sub-text{
+
+.main-text {
+    height: 4.5em;
     text-align: center;
+    font-family: 'Chela One', cursive;
+    font-size: 2em;
+}
+
+.sub-text {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4em;
+}
+
+/*  todo        button styles      */
+.button {
+
+    text-align: center;
+    font-family: 'Chela One', cursive;
+    margin-top: -4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.button a {
+    text-decoration: none;
+    color: white !important;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px rgb(17, 16, 16);
+    z-index: 2;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 3rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121), linear-gradient(137.48deg, #ffdb3b 10%, #FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+}
+
+strong {
+    z-index: 2;
+    font-family: 'Avalors Personal Use';
+    font-size: 12px;
+    letter-spacing: 5px;
 
 }
-.button{
-    height: 3em;
-}
-.button  a{
-  text-decoration: none;
-  color: white;
-}
-.img-holder{
-height: 8rem;
-background-image: url(../assets/FFFFOUND!\ _\ Sorry!!!.gif);
-background-size: contain;
-background-position: center;
-background-repeat: no-repeat;
-position: absolute;
-top:75%;
-}
-/*  todo End Of  content-holder */
 
-/* ? End Of Header Content CSS */
+#glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+}
+
+.circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+}
+
+.btn-1:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+}
+
+.btn-1:hover {
+    transform: scale(1.1)
+}
+
+.btn-1:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+
+.btn-1:active .circle {
+    background: #FE53BB;
+}
+
+#stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+}
+
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-135rem);
+    }
+}
+
+@keyframes animStarRotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient_301 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse_3011 {
+    0% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+/* todo           end of btn styles    */
+
+/*  todo           End Of  content-holder      */
+
+/*       ?          svg divider           */
+
+.custom-shape-divider-top-1689413258 {
+    position: absolute;
+    margin-top: 1rem;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -5;
+}
+
+.custom-shape-divider-top-1689413258 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 86px;
+}
+
+.custom-shape-divider-top-1689413258 .shape-fill {
+    fill: #141414;
+}
+
+/*  ? End of svg divider */
+
+/*  todo digital verse text */
+.digital-verse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    position:relative;
+    z-index:2;
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+    font-weight: bolder;
+    animation: focus-in-contract 1s linear 0s 1 normal none;
+}
+
+@keyframes focus-in-contract {
+        
+    0% {
+        letter-spacing:1em;
+        filter:blur(12px);
+        opacity:0;
+    }
+    100% {
+        filter:blur(0);
+        opacity:1;
+    }
+}
+
+/* todo             Digital verse End       */
+
+/*  ?               Astronut css styles      */
+
+.astronut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -3;
+}
+.astro-img img{
+    height:7em;
+    margin-top: -1.15rem;
+    /* position: absolute; */
+}
+/*  ?            END  Astronut css styles     */
+
+
