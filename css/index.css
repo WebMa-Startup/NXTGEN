@@ -332,14 +332,14 @@ strong {
 /*  ? End of svg divider */
 
 /*  todo digital verse text */
-.digital-verse{
+.digital-verse {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
     color: white;
-    position:relative;
-    z-index:2;
+    position: relative;
+    z-index: 2;
     margin-top: 1.5rem;
     margin-left: .5rem;
     font-weight: bolder;
@@ -347,15 +347,16 @@ strong {
 }
 
 @keyframes focus-in-contract {
-        
+
     0% {
-        letter-spacing:1em;
-        filter:blur(12px);
-        opacity:0;
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
     }
+
     100% {
-        filter:blur(0);
-        opacity:1;
+        filter: blur(0);
+        opacity: 1;
     }
 }
 
@@ -363,18 +364,59 @@ strong {
 
 /*  ?               Astronut css styles      */
 
-.astronut{
+.astronut {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: -3;
+
 }
-.astro-img img{
-    height:7em;
+
+/* .main-astro-bg-holder{
+    background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+    background-size:cover;
+    background-repeat: no-repeat;
+} */
+.astro-img img {
+    height: 7em;
     margin-top: -1.15rem;
     /* position: absolute; */
 }
+
 /*  ?            END  Astronut css styles     */
 
+/* todo                   main-img-01     */
+.main-img-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-top: -5rem;
+    position: relative;
+    z-index: -6;
+    background-image: url(../assets/crop-motion-lap.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
+.Main-img-01 img {
+    height: 250px;
+}
+
+.first-content-holder {
+    background-color: #EDF7FE;
+    text-align: center;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-second-card {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
