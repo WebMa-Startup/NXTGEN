@@ -1,12 +1,16 @@
 /*  CSS IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Chela+One&family=Cormorant+Garamond:ital@1&family=Lilita+One&family=VT323&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Chela+One&family=Cormorant+Garamond:ital@1&family=EB+Garamond&family=Lilita+One&family=Lugrasimo&family=Roboto+Mono&display=swap');
+
+
 
 /*
 font-family: 'Bacasime Antique', serif;
 font-family: 'Chela One', cursive;
 font-family: 'Cormorant Garamond', serif;
+font-family: 'EB Garamond', serif;
 font-family: 'Lilita One', cursive;
-font-family: 'VT323', monospace;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Roboto Mono', monospace;
  */
 
 /* Global Reset */
@@ -45,9 +49,10 @@ font-family: 'VT323', monospace;
     cursor: pointer;
     /* box-shadow: 0px 0px 15px 1px  #ffdf00; */
     box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
+    position: fixed;
+    position: fixed;
+    z-index: 999999;
+    top: 0px;
 }
 
 .navbar-link {
@@ -82,7 +87,7 @@ font-family: 'VT323', monospace;
 /* todo  content-holder */
 
 .content-holder {
-    height: 75vh;
+    height:80vh;
     color: white;
     display: flex;
     align-items: center;
@@ -387,36 +392,152 @@ strong {
 
 /* todo                   main-img-01     */
 .main-img-holder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow-x: hidden;
-    margin-top: -5rem;
-    position: relative;
-    z-index: -6;
-    background-image: url(../assets/crop-motion-lap.gif);
-    background-position: center;
+    margin-top: -1rem;
+    height: 320px;
+    background-image: url(../assets/video-production-pixcap.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
-}
-
-.Main-img-01 img {
-    height: 250px;
 }
 
 .first-content-holder {
     background-color: #EDF7FE;
+}
+
+.main-first-holder {}
+
+.first-content-header {
+    background: linear-gradient(to right, #232324 45%, #141616 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Chela One', cursive;
+    font-size: 2.5rem;
     text-align: center;
+}
+
+.first-header-content {
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+/* todo       Mian first content button         */
+.first-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+/* todo          main Second content css */
+.second-main-text,
+.second-sub-text {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Bacasime Antique', serif */
+   
+}
+.main-second{
+    background-color:white;
+}
+
+.second-main-text {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.second-sub-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* todo                amin-second card Css */
+.main-second-card {
+    text-align: center;
+    height: 300px;
+    width: 95%;
+    border-radius:10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 6px 6px 23px #9d9a9a,
+        -6px -6px 23px #ffffff;
 }
 
 .card-holder {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    background-color: white;
 }
-
-.main-second-card {
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe,
-        -20px -20px 60px #ffffff;
+.card-img img{
+    height: 100px;
+    width: 100px;
 }
+.card-header{
+    font-family: 'Lugrasimo', cursive;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.card-content{
+    font-family: 'Roboto Mono', monospace;
+    /* text-align: justify !important; */
+}
+/* todo   second main svg divider */
