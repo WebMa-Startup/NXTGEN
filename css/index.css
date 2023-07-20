@@ -1,5 +1,5 @@
 /*  CSS IMPORTS */
-  @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Chela+One&family=Cormorant+Garamond:ital@1&family=EB+Garamond&family=Lilita+One&family=Lugrasimo&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Chela+One&family=Cormorant+Garamond:ital@1&family=EB+Garamond&family=Lilita+One&family=Lugrasimo&family=Roboto+Mono&display=swap');
 
 
 
@@ -19,7 +19,9 @@ font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /*  End Global Reset */
 .header {
 
@@ -87,7 +89,7 @@ font-family: 'Roboto Mono', monospace;
 /* todo  content-holder */
 
 .content-holder {
-    height:80vh;
+    height: 80vh;
     color: white;
     display: flex;
     align-items: center;
@@ -395,17 +397,19 @@ strong {
     overflow-x: hidden;
     margin-top: -1rem;
     height: 320px;
-    background-image: url(../assets/video-production-pixcap.png);
+    background-image: url(../assets/techny-email-marketing-and-newsletter-min.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .first-content-holder {
-    background-color: #EDF7FE;
+    /* background-color: #EDF7FE; */
 }
 
-.main-first-holder {}
+.main-first-holder {
+    background-color: #EEDEEB;
+}
 
 .first-content-header {
     background: linear-gradient(to right, #232324 45%, #141616 100%);
@@ -433,22 +437,12 @@ strong {
     margin: auto;
     padding: 12px 18px;
     transition: all 0.2s ease;
-    border: none;
-    background: none;
+    border: 2px  #00236B solid;
+     background:#F27F3D;
+    border-radius:25px;
 }
 
-.cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #b1dae7;
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
-}
+
 
 .cta span {
     position: relative;
@@ -456,7 +450,7 @@ strong {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.05em;
-    color: #234567;
+    color: white;
 }
 
 .cta svg {
@@ -474,7 +468,7 @@ strong {
 
 .cta:hover:before {
     width: 100%;
-    background: #b1dae7;
+    background: #F27F3D;
 }
 
 .cta:hover svg {
@@ -486,58 +480,80 @@ strong {
 }
 
 /* todo          main Second content css */
-.second-main-text,
-.second-sub-text {
-    text-align: center;
-    font-family: 'Cormorant Garamond', serif;
-    /* font-family: 'Bacasime Antique', serif */
-   
-}
-.main-second{
+
+.main-second {
     background-color:white;
 }
-
+.second-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2rem;
+}
+.second-img img{
+    height: 100px;
+    width: 100px;
+}
 .second-main-text {
     font-size: 3rem;
     font-weight: bolder;
     margin-top: 1rem;
+    text-align: center;
+   font-family: 'Bacasime Antique', serif;
 }
 
 .second-sub-text {
     font-size: 1.4rem;
     font-weight: bold;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Bacasime Antique', serif */
 }
 
-/* todo                amin-second card Css */
+/* todo                main-second card Css */
 .main-second-card {
     text-align: center;
     height: 300px;
     width: 95%;
-    border-radius:10px;
+    border-radius: 10px;
     margin-bottom: 1.5rem;
-    box-shadow: 6px 6px 23px #9d9a9a,
-        -6px -6px 23px #ffffff;
+    /* background-color: #D9DAFF; */
 }
 
 .card-holder {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: white;
+    flex-direction:column;
+   background-color:white;
+   
+   
 }
-.card-img img{
+
+.card-img img {
     height: 100px;
     width: 100px;
 }
-.card-header{
+
+.card-header {
     font-family: 'Lugrasimo', cursive;
     font-weight: bolder;
     font-size: 1.3rem;
     margin: 1rem;
 }
-.card-content{
-    font-family: 'Roboto Mono', monospace;
+
+.card-content {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
     /* text-align: justify !important; */
 }
-/* todo   second main svg divider */
+
+/* todo   End Of Main Second Division CSS*/
+
+/* todo   third  Division CSS*/
+
+
+/* todo   End Of third  Division CSS*/
+
+
+
