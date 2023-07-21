@@ -54,7 +54,7 @@ html{
     position: fixed;
     position: fixed;
     z-index: 999999;
-    top: 1rem;
+    top: 0;
 }
 
 .navbar-link {
@@ -576,10 +576,10 @@ strong {
     background-image: url(../assets/bloom-woman-doing-social-media-marketing.gif);
 }
 .img-2{
-    background-image: url(../assets/florid-software-developer.gif);
+    background-image: url(../assets/bring-customer.gif);
 }
 .img-3{
-    background-image: url(../assets/urban-856.gif);
+    background-image: url(../assets/ecommerce-2.gif);
 }
 
 /* first header */
