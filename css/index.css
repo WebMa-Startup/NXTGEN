@@ -54,7 +54,7 @@ html{
     position: fixed;
     position: fixed;
     z-index: 999999;
-    top: 0px;
+    top: 1rem;
 }
 
 .navbar-link {
@@ -102,11 +102,11 @@ html{
 }
 
 .sub-holder {
-    background: rgba(255, 255, 255, 0.02);
+    /* background: rgba(255, 255, 255, 0.02);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px); */
 }
 
 .main-text {
@@ -408,7 +408,7 @@ strong {
 }
 
 .main-first-holder {
-    background-color: #EEDEEB;
+    background-color:white;
 }
 
 .first-content-header {
@@ -430,6 +430,7 @@ strong {
 .first-btn a {
     text-decoration: none;
     color: white;
+    
 }
 
 .cta {
@@ -440,6 +441,7 @@ strong {
     border: 2px  #00236B solid;
      background:#F27F3D;
     border-radius:25px;
+    margin-block: 2.8rem;
 }
 
 
@@ -488,7 +490,7 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -2rem;
+  margin-top: 2rem;
 }
 .second-img img{
     height: 100px;
@@ -507,6 +509,7 @@ strong {
     font-weight: bold;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 6rem;
     /* font-family: 'Bacasime Antique', serif */
 }
 
@@ -536,9 +539,9 @@ strong {
 }
 
 .card-header {
-    font-family: 'Lugrasimo', cursive;
+    font-family: 'EB Garamond', serif;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     margin: 1rem;
 }
 
@@ -552,7 +555,52 @@ strong {
 
 /* todo   third  Division CSS*/
 
+.third-header{
+    text-align: center;
+}
+.third-header h2{
+    font-size:2.5rem !important;
+    font-weight: bolder !important;
+    margin-block: 3rem;
+    text-align: center;
+    font-family: 'Bacasime Antique', serif;
+}
+.third-first{
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 4rem;
+}
+.img-1{
+    background-image: url(../assets/bloom-woman-doing-social-media-marketing.gif);
+}
+.img-2{
+    background-image: url(../assets/florid-software-developer.gif);
+}
+.img-3{
+    background-image: url(../assets/urban-856.gif);
+}
 
+/* first header */
+.first-header{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    padding-block: 20px;
+}
+.first-content{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+.third-btn a{
+   text-decoration: none;
+   color: white;
+}
+.third-btn{
+    margin-top: 2rem;
+}
 /* todo   End Of third  Division CSS*/
 
 
