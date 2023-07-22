@@ -18,6 +18,7 @@ font-family: 'Roboto Mono', monospace;
 
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -89,7 +90,7 @@ html{
 /* todo  content-holder */
 
 .content-holder {
-    height: 80vh;
+    height:100vh;
     color: white;
     display: flex;
     align-items: center;
@@ -113,13 +114,14 @@ html{
     height: 4.5em;
     text-align: center;
     font-family: 'Chela One', cursive;
-    font-size: 2em;
+    font-size: 2.5rem;
 }
 
 .sub-text {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.4em;
+    font-weight: bolder;
 }
 
 /*  todo        button styles      */
@@ -146,7 +148,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 13rem;
+    width: 20rem;
     height: 3rem;
     background-size: 300% 300%;
     backdrop-filter: blur(1rem);
@@ -181,7 +183,8 @@ strong {
 #glow {
     position: absolute;
     display: flex;
-    width: 12rem;
+    width: 20rem;
+    height: 2.5rem;
 }
 
 .circle {
@@ -376,7 +379,15 @@ strong {
     align-items: center;
     justify-content: center;
     position: relative;
+    /* animation: 2s  infinite linear spin; */
 
+}
+@keyframes spin { 
+    from { 
+        transform: rotateY(0deg); 
+    } to { 
+        transform: rotateY(360deg); 
+    }
 }
 
 /* .main-astro-bg-holder{
@@ -385,8 +396,8 @@ strong {
     background-repeat: no-repeat;
 } */
 .astro-img img {
-    height: 7em;
-    margin-top: -1.15rem;
+    /* height: 7em;
+    margin-top: -1.15rem; */
     /* position: absolute; */
 }
 
@@ -516,8 +527,7 @@ strong {
 /* todo                main-second card Css */
 .main-second-card {
     text-align: center;
-    height: 300px;
-    width: 95%;
+    width: 90%;
     border-radius: 10px;
     margin-bottom: 1.5rem;
     /* background-color: #D9DAFF; */
@@ -548,13 +558,21 @@ strong {
 .card-content {
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
+    margin-bottom: 1.5rem;
     /* text-align: justify !important; */
 }
 
 /* todo   End Of Main Second Division CSS*/
 
 /* todo   third  Division CSS*/
-
+.third-holder{
+    background-image: url(../assets/blob-scene-haikei-md-white.svg);
+}
+/* .third-holder-01,third-holder-02,third-holder-03{
+    background-image: url(../assets/blob-scene-haikei-md-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
 .third-header{
     text-align: center;
 }
@@ -576,10 +594,11 @@ strong {
     background-image: url(../assets/bloom-woman-doing-social-media-marketing.gif);
 }
 .img-2{
-    background-image: url(../assets/bring-customer.gif);
+    background-image: url(../assets/urban-856.gif);
 }
 .img-3{
-    background-image: url(../assets/ecommerce-2.gif);
+    background-image: url(../assets/ecommerce.gif);
+    background-size: contain;
 }
 
 /* first header */
@@ -602,6 +621,42 @@ strong {
     margin-top: 2rem;
 }
 /* todo   End Of third  Division CSS*/
+
+/* todo  fourth-header Division CSS */
+
+.fourth-header h2{
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+    padding-block: 20px;
+    text-align: center;
+}
+.fourth-card-01,.fourth-card-02{
+   padding: 0 25px;
+    /* display: flex;
+    gap: 2rem; */
+}
+
+.fourth-card-01 .header-01 , .fourth-card-02 .header-02{
+    margin-top: .6rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    /* padding-block: 20px; */
+}
+
+.fourth-card-01 .content-01 , .fourth-card-02 .content-02{
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+.fourth-card-01 .inner-holder , .fourth-card-02 .inner-holder{
+    margin-block: 2.5rem;
+    /* padding-block: 2.5rem; */
+    
+}
+/* todo  End of  fourth-header Division CSS */
 
 
 
