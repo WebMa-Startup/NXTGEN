@@ -20,9 +20,11 @@ font-family: 'Roboto Mono', monospace;
     padding: 0;
     overflow-x: hidden;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /*  End Global Reset */
 .header {
 
@@ -87,10 +89,10 @@ html{
 
 /*  ? Header content CSS */
 
-/* todo  content-holder */
+/* todo                             content-holder */
 
 .content-holder {
-    height:100vh;
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
@@ -124,7 +126,7 @@ html{
     font-weight: bolder;
 }
 
-/*  todo        button styles      */
+/*  todo                       button styles      */
 .button {
 
     text-align: center;
@@ -312,9 +314,9 @@ strong {
     }
 }
 
-/* todo           end of btn styles    */
+/* todo                        end of btn styles    */
 
-/*  todo           End Of  content-holder      */
+/*  todo                    End Of  content-holder      */
 
 /*       ?          svg divider           */
 
@@ -341,7 +343,7 @@ strong {
 
 /*  ? End of svg divider */
 
-/*  todo digital verse text */
+/*  todo                   digital verse text           */
 .digital-verse {
     display: flex;
     align-items: center;
@@ -382,11 +384,14 @@ strong {
     /* animation: 2s  infinite linear spin; */
 
 }
-@keyframes spin { 
-    from { 
-        transform: rotateY(0deg); 
-    } to { 
-        transform: rotateY(360deg); 
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
     }
 }
 
@@ -419,7 +424,7 @@ strong {
 }
 
 .main-first-holder {
-    background-color:white;
+    background-color: white;
 }
 
 .first-content-header {
@@ -437,11 +442,11 @@ strong {
     font-size: 1.2em;
 }
 
-/* todo       Mian first content button         */
+/* todo                 Mian first content button         */
 .first-btn a {
     text-decoration: none;
     color: white;
-    
+
 }
 
 .cta {
@@ -449,9 +454,9 @@ strong {
     margin: auto;
     padding: 12px 18px;
     transition: all 0.2s ease;
-    border: 2px  #00236B solid;
-     background:#F27F3D;
-    border-radius:25px;
+    border: 2px #00236B solid;
+    background: #F27F3D;
+    border-radius: 25px;
     margin-block: 2.8rem;
 }
 
@@ -492,27 +497,30 @@ strong {
     transform: scale(0.95);
 }
 
-/* todo          main Second content css */
+/* todo                main Second content css       */
 
 .main-second {
-    background-color:white;
+    background-color: white;
 }
-.second-img{
+
+.second-img {
     display: flex;
     align-items: center;
     justify-content: center;
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
-.second-img img{
+
+.second-img img {
     height: 100px;
     width: 100px;
 }
+
 .second-main-text {
     font-size: 3rem;
     font-weight: bolder;
     margin-top: 1rem;
     text-align: center;
-   font-family: 'Bacasime Antique', serif;
+    font-family: 'Bacasime Antique', serif;
 }
 
 .second-sub-text {
@@ -537,10 +545,10 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
-   background-color:white;
-   
-   
+    flex-direction: column;
+    background-color: white;
+
+
 }
 
 .card-img img {
@@ -562,69 +570,79 @@ strong {
     /* text-align: justify !important; */
 }
 
-/* todo   End Of Main Second Division CSS*/
+/* todo                       End Of Main Second Division CSS  */
 
-/* todo   third  Division CSS*/
-.third-holder{
+/* todo                           third  Division CSS         */
+.third-holder {
     background-image: url(../assets/blob-scene-haikei-md-white.svg);
 }
+
 /* .third-holder-01,third-holder-02,third-holder-03{
     background-image: url(../assets/blob-scene-haikei-md-white.svg);
     background-size: contain;
     background-repeat: no-repeat;
 } */
-.third-header{
+.third-header {
     text-align: center;
 }
-.third-header h2{
-    font-size:2.5rem !important;
+
+.third-header h2 {
+    font-size: 2.5rem !important;
     font-weight: bolder !important;
     margin-block: 3rem;
     text-align: center;
     font-family: 'Bacasime Antique', serif;
 }
-.third-first{
+
+.third-first {
     height: 350px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     margin-top: 4rem;
 }
-.img-1{
+
+.img-1 {
     background-image: url(../assets/bloom-woman-doing-social-media-marketing.gif);
 }
-.img-2{
+
+.img-2 {
     background-image: url(../assets/urban-856.gif);
 }
-.img-3{
+
+.img-3 {
     background-image: url(../assets/ecommerce.gif);
     background-size: contain;
 }
 
 /* first header */
-.first-header{
+.first-header {
     font-family: 'EB Garamond', serif;
     font-size: 1.9rem;
     font-weight: bolder;
     margin-top: 1rem;
     padding-block: 20px;
 }
-.first-content{
+
+.first-content {
     font-family: 'EB Garamond', serif;
     font-size: 1.2rem;
 }
-.third-btn a{
-   text-decoration: none;
-   color: white;
+
+.third-btn a {
+    text-decoration: none;
+    color: white;
 }
-.third-btn{
+
+.third-btn {
     margin-top: 2rem;
 }
+
 /* todo   End Of third  Division CSS*/
 
 /* todo  fourth-header Division CSS */
 
-.fourth-header h2{
+.fourth-header h2 {
     font-family: 'EB Garamond', serif;
     font-size: 2.5rem;
     font-weight: bolder;
@@ -632,13 +650,16 @@ strong {
     padding-block: 20px;
     text-align: center;
 }
-.fourth-card-01,.fourth-card-02{
-   padding: 0 25px;
+
+.fourth-card-01,
+.fourth-card-02 {
+    padding: 0 25px;
     /* display: flex;
     gap: 2rem; */
 }
 
-.fourth-card-01 .header-01 , .fourth-card-02 .header-02{
+.fourth-card-01 .header-01,
+.fourth-card-02 .header-02 {
     margin-top: .6rem;
     font-family: 'EB Garamond', serif;
     font-size: 1.9rem;
@@ -646,17 +667,184 @@ strong {
     /* padding-block: 20px; */
 }
 
-.fourth-card-01 .content-01 , .fourth-card-02 .content-02{
+.fourth-card-01 .content-01,
+.fourth-card-02 .content-02 {
     text-align: justify;
     font-family: 'EB Garamond', serif;
     font-size: 1.2rem;
 }
-.fourth-card-01 .inner-holder , .fourth-card-02 .inner-holder{
+
+.fourth-card-01 .inner-holder,
+.fourth-card-02 .inner-holder {
     margin-block: 2.5rem;
     /* padding-block: 2.5rem; */
+
+}
+
+/* todo                 End of  fourth-header Division CSS */
+
+/* todo                        Review Section CSS           */
+.review{
+    background-color: #F2FEDC;
+}
+.slider-holder{
+    margin-block: 2rem;
+    background-image: url(../assets/wave-haikei.svg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.review-header h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    padding-block: 20px;
+    text-align: center;
+}
+
+.review-holder{
+    margin-top: 1.3rem;
+}
+.profile-container{
+position: relative;
+}
+.profile-container img{
+     height: 100px;
+     width: 100px;
+     border-radius: 100px;
+     border: 10px #ffa500 solid;
+     border-radius: 100px;
+     margin-inline: .5rem;
+}
+.customer-review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.customer-review p{
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    margin-block: 1rem;
+    margin-inline: .8rem;
+}
+.customer-name{
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-inline: .5rem;
+}
+.btn-holder{
+    margin-block: 1rem;
+    cursor: pointer;
+    margin-inline: .5rem;
     
 }
-/* todo  End of  fourth-header Division CSS */
+.btn-holder button {
+    margin-right: .8rem;
+    border: none;
+    background: transparent;
+}
+/* todo                   End Of Review Section CSS              */
 
+/*  todo              frequently asked question section          */
+.faq{
+    background-color:#F9F871;
+}
+.main-faq{
+margin-bottom: 3rem;
 
+}
+.main-faq h2{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    padding-block: 20px;
+    margin-bottom: 1.3rem;
+}
+.question {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-inline: 0.5rem;
+    padding-inline: 25px;
+   position: relative;
+}
+.plus{
+    float: right;
+    font-size: 1.7rem;
+}
 
+.question p{
+    border-bottom: 2px black solid;
+    padding-bottom: 10px;
+}
+/*  todo               frequently asked question section          */
+
+/* todo                         footer CSS                       */
+
+.footer{
+    background-color:#2d3752;
+    color: white;
+}
+.footer-holder{
+    border-bottom:2px white solid;
+}
+.footer-logo{
+    margin-inline: 0 !important;
+}
+.footer-logo img{
+    height: 80px;
+    will-change: scroll-position;
+    width: 200px;
+}
+.description {
+    margin-block: 1.5rem;
+    overflow: hidden !important;
+}
+.description h3{
+    text-align:justify;
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    height: 65px;
+}
+.description p{
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    margin-block: 1rem;
+}
+.links{
+    text-align: center;
+}
+.links h3{
+    font-family: 'EB Garamond', serif;
+    font-size:2.2rem;
+    height: 45px;
+}
+.links ol{
+    padding: 0 !important;
+   
+}
+.links ol li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+}
+.copyright{
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+/* todo                         footer CSS                       */
