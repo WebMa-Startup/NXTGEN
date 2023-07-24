@@ -184,18 +184,18 @@
   }
   .flip-box .flip-box-front .inner{
     position: absolute;
-    top: 15%;
+    top: 13%;
   }
   .flip-box .flip-box-back .inner{
     position: absolute;
-    top: 14%;
+    top: 9%;
   }
   .flip-box .flip-box-back .inner .front-para{
-    line-height: 20px;
+    line-height: 21px;
   }
   .flip-box .flip-box-back .inner .back-para{
     font-size: 15px;
-    line-height: 20px;
+    line-height: 21px;
   }
   
   .flip-box-img {
@@ -410,7 +410,7 @@
   .why-content{
    position: absolute;
    top: 6.5rem;
-   left: 1.5rem;
+   /* left: 1.5rem; */
   }
   
  .why-content>h2{
@@ -586,7 +586,7 @@
 .why-content{
   position: absolute;
    top: 6.5rem;
-   left: 1.5rem;
+   /* left: 1.5rem; */
 }
   
  .why-content>h2{
@@ -761,8 +761,8 @@
 @media (max-width: 1399.98px) { 
   .why-content{
     position: absolute;
-   top: 7rem;
-   left: 1.5rem;
+   top: 20px;
+   /* left: 1.5rem; */
   }
  .why-content>h2{
     font-size: 40px;
