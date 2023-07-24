@@ -574,14 +574,15 @@ strong {
 
 /* todo                           third  Division CSS         */
 .third-holder {
-    background-image: url(../assets/blob-scene-haikei-md-white.svg);
+    /* background-image: url(../assets/blob-scene-haikei-md-white.svg); */
 }
 
-/* .third-holder-01,third-holder-02,third-holder-03{
-    background-image: url(../assets/blob-scene-haikei-md-white.svg);
-    background-size: contain;
+ .third-holder-01,third-holder-02,third-holder-03{
+    /* background-image: url(../../../Downloads/wave-haikei\ \(1\).svg);
+    background-position: center;
     background-repeat: no-repeat;
-} */
+    background-size: cover; */
+} 
 .third-header {
     text-align: center;
 }
@@ -603,15 +604,16 @@ strong {
 }
 
 .img-1 {
-    background-image: url(../assets/bloom-woman-doing-social-media-marketing.gif);
+    background-image: url(../assets/Digital\ transformation-bro.svg);
+    background-size: contain;
 }
 
 .img-2 {
-    background-image: url(../assets/urban-856.gif);
+    background-image: url(../assets/customer-relationship-management-animate.svg);
 }
 
 .img-3 {
-    background-image: url(../assets/ecommerce.gif);
+    background-image: url(../assets/ecommerce-campaign-animate.svg);
     background-size: contain;
 }
 
@@ -685,15 +687,20 @@ strong {
 
 /* todo                        Review Section CSS           */
 .review{
-    background-color: #F2FEDC;
+    /* background-color: #F2FEDC; */
+    background-image: url(../../../Downloads/low-poly-grid-haikei.svg);
+    /* margin-bottom: 1rem; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .slider-holder{
     margin-block: 2rem;
-    background-image: url(../assets/wave-haikei.svg);
+    /* background-image: url(../assets/wave-haikei.svg); */
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     align-items: center;
 }
@@ -755,7 +762,11 @@ position: relative;
 
 /*  todo              frequently asked question section          */
 .faq{
-    background-color:#F9F871;
+    /* background-color:#F9F871; */
+    background-image: url(../../../Downloads/stacked-waves-haikei.svg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
 }
 .main-faq{
 margin-bottom: 3rem;
@@ -792,8 +803,8 @@ margin-bottom: 3rem;
 /* todo                         footer CSS                       */
 
 .footer{
-    background-color:#2d3752;
-    color: white;
+    background-color: #292c2f;
+    color: #bbb;
 }
 .footer-holder{
     border-bottom:2px white solid;
