@@ -1,2 +1,142 @@
 /* todo          Imports                 */
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Chela+One&family=Cormorant+Garamond:ital@1&family=EB+Garamond&family=Lilita+One&family=Lugrasimo&family=Roboto+Mono&display=swap');
 
+/*
+font-family: 'Bacasime Antique', serif;
+font-family: 'Chela One', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Lilita One', cursive;
+font-family: 'Lugrasimo', cursive;
+font-family: 'Roboto Mono', monospace;
+ */
+
+
+ /*                            navbar CSS                    */
+.navbar-brand>.brand-img {
+
+    height: 2.3em;
+    width: 9em;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+}
+
+.nav-container>button {
+    border: none !important;
+}
+
+.nav-container {
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 15px 1px  #ffdf00; */
+    box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
+    position: fixed;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+.navbar-link .nav-link {
+    color: white !important;
+    font-family: 'Bacasime Antique', serif;
+    /* font-family: 'VT323', monospace; */
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.navbar-nav a {
+    text-align: center;
+}
+
+.navbar-nav a:hover {
+    background-color: #0c0c0cce;
+    border-radius: 10px;
+}
+
+/*                          End Of Nav CSS                  */
+
+.about-holder {
+    height: 90vh;
+
+    background-image: url(https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80); */
+}
+
+.text-holder {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    background: rgba(14, 14, 14, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.text-holder h1 {
+    font-family: 'EB Garamond', serif;
+    height: 180px !important;
+    height: max-content;
+    font-size: 5rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+.text-holder span {
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    display: block;
+    color:white;
+}
+
+.text-holder i {
+    color: orange;
+    
+}
+
+/*                   todo     container-01 css */
+
+.about-us-container-01 h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+    font-family: 'Bacasime Antique', serif
+}
+.about-us-container-01 p{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-block:1rem ;
+}
+
+.about-img-holder-01{
+    
+}
+.about-img-1,.about-img-2,.about-img-3{
+    background-color: #FFECCC;
+    border: 1px orange solid;
+    border-radius: 25px;
+    margin-block: 1rem;
+}
+.about-img-2{
+    height:250px;
+    width: 100%;
+}

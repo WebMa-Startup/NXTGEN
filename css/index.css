@@ -115,15 +115,16 @@ html {
 .main-text {
     height: 4.5em;
     text-align: center;
-    font-family: 'Chela One', cursive;
-    font-size: 2.5rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 .sub-text {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4em;
-    font-weight: bolder;
+    font-size: 1.6em;
+    margin-top: 1rem;
 }
 
 /*  todo                       button styles      */
@@ -534,7 +535,6 @@ strong {
 
 /* todo                main-second card Css */
 .main-second-card {
-    text-align: center;
     width: 90%;
     border-radius: 10px;
     margin-bottom: 1.5rem;
@@ -560,14 +560,14 @@ strong {
     font-family: 'EB Garamond', serif;
     font-weight: bolder;
     font-size: 1.9rem;
-    margin: 1rem;
+    margin-block: 1rem;
 }
 
 .card-content {
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    /* text-align: justify !important; */
+    text-align: justify !important; 
 }
 
 /* todo                       End Of Main Second Division CSS  */
@@ -622,8 +622,8 @@ strong {
     font-family: 'EB Garamond', serif;
     font-size: 1.9rem;
     font-weight: bolder;
-    margin-top: 1rem;
-    padding-block: 20px;
+    /* margin-top: 1rem;
+    padding-block: 20px; */
 }
 
 .first-content {
@@ -813,9 +813,10 @@ margin-bottom: 3rem;
     margin-inline: 0 !important;
 }
 .footer-logo img{
-    height: 80px;
+    height: 55px;
     will-change: scroll-position;
     width: 200px;
+    margin-top: .6rem;
 }
 .description {
     margin-block: 1.5rem;
