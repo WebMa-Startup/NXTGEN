@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 .service_banner{
     width: 100%; 
+    margin-bottom: 40px;
 }
 .service_banner video{
     width: 100%;
@@ -27,9 +31,93 @@
     text-decoration: none;
     color: antiquewhite;
 }
+.service_banner ol{
+    margin: 0;
+}
 .service_banner ol li{
     color: antiquewhite !important;
     position: relative; 
-    padding-top: 49%;
-    left: 60%;
+    padding-top: 48%;
+    left: 59%;
+}
+
+.over-row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main-service-content{
+    text-align: center;
+    background-color: black;
+    color: white;
+}.main-service-content>h2{
+    margin: 10px 0;
+
+}
+.main-service-content>P{
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.service-col img{
+    width: 150px;
+}
+.service-col-content{
+    text-align: center;
+}
+.service-col-content>h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin:15px 0;
+    letter-spacing: 1px;
+}
+.service-col-content>p{
+    text-align: justify;
+}
+.service-img{
+    margin: 4rem 0 0 0;
+}
+.service-work{
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.line{
+    width: 30%;
+    height: 3px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+.line-1{
+    background-color: plum;
+}
+.line-2{
+    background-color: rgb(241, 99, 48);
+}
+.line-3{
+    background-color: rgb(240, 240, 58);
+}
+.line-4{
+    background-color: rgb(94, 94, 226);
+}
+.line-5{
+    background-color: aquamarine;
+}
+.line-6{}
+
+.end-line{
+    margin: 2px 0;
+    height: 2px;
+    background-color: rgb(255, 166, 0);
+}
+.service-row{
+    margin: 30px 0;
+    border: 1px solid white;
+padding: 5px;
+}
+.service-col-content:hover .line{
+    width: 100%;
+    transition: .7s;
+
 }
