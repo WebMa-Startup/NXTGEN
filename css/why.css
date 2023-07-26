@@ -36,6 +36,7 @@
 
 
 
+
 /* // `xs` returns only a ruleset and no media query
 // ... { ... } */
 
@@ -44,6 +45,7 @@
 .why-content{
     /* top: 75px; */
     text-align: center;
+    scroll-behavior: none;
     position: absolute;
     backdrop-filter: blur(1.9px);
     -webkit-backdrop-filter: blur(1.9px);
@@ -128,6 +130,7 @@
   }
   
   .flip-box-front {
+       background-color: rgb(22, 22, 22);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -146,6 +149,7 @@
   }
   
   .flip-box-back {
+    background-color: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -184,18 +188,18 @@
   }
   .flip-box .flip-box-front .inner{
     position: absolute;
-    top: 13%;
+    top: 11%;
   }
   .flip-box .flip-box-back .inner{
     position: absolute;
-    top: 9%;
+    top: 5%;
   }
   .flip-box .flip-box-back .inner .front-para{
-    line-height: 21px;
+    line-height: 22px;
   }
   .flip-box .flip-box-back .inner .back-para{
     font-size: 15px;
-    line-height: 21px;
+    line-height: 23px;
   }
   
   .flip-box-img {
@@ -231,6 +235,7 @@
 .why-content{
   /* top: 75px; */
   text-align: center;
+  scroll-behavior: none;
   position: absolute;
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(1.9px);
@@ -310,6 +315,7 @@
   }
   
   .flip-box-front {
+       background-color: rgb(22, 22, 22);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -328,6 +334,7 @@
   }
   
   .flip-box-back {
+    background-color: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -410,7 +417,9 @@
   .why-content{
    position: absolute;
    top: 6.5rem;
-   /* left: 1.5rem; */
+   
+   scroll-behavior: none;
+   /*left: 1.5rem; */
   }
   
  .why-content>h2{
@@ -486,6 +495,7 @@
   }
   
   .flip-box-front {
+       background-color: rgb(22, 22, 22);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -504,6 +514,7 @@
   }
   
   .flip-box-back {
+    background-color: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -586,7 +597,9 @@
 .why-content{
   position: absolute;
    top: 6.5rem;
-   /* left: 1.5rem; */
+  
+   scroll-behavior: none;
+   /*left: 1.5rem; */
 }
   
  .why-content>h2{
@@ -662,6 +675,7 @@
   }
   
   .flip-box-front {
+       background-color: rgb(22, 22, 22);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -680,6 +694,7 @@
   }
   
   .flip-box-back {
+    background-color: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -751,18 +766,15 @@
     padding: 7px 10px;
     text-transform: uppercase;
   }
-  
-  
-  
-  
- }
+}
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) { 
   .why-content{
     position: absolute;
    top: 20px;
-   /* left: 1.5rem; */
+   scroll-behavior: none;
+   /*left: 1.5rem; */
   }
  .why-content>h2{
     font-size: 40px;
@@ -771,6 +783,7 @@
   }
  .why-content>p{
     font-size: 20px;
+    margin-top: 27%;
   }
  
   
@@ -837,6 +850,7 @@
   }
   
   .flip-box-front {
+       background-color: rgb(22, 22, 22);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -855,6 +869,7 @@
   }
   
   .flip-box-back {
+    background-color: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -893,7 +908,7 @@
     /* top: 43%; */
   }
   .flip-box .flip-box-front .inner{
-    margin-top: 160px;
+    margin-top: 150px;
     /* padding: 10px; */
   }
   .flip-box .flip-box-back .inner{
@@ -907,6 +922,7 @@
   }
   .flip-box-back .inner > p{
     font-size: 15px;
+    line-height: 23px;
   
   } 
   /* .flip-box-back .inner > .flip-box-button{
@@ -938,7 +954,8 @@
   .why-content{
     /* width: 55%; */
     position: absolute;
-   top: 19rem;
+scroll-behavior: none;  
+  top: 19rem;
    left: 1.5rem;
   }
   
@@ -1015,6 +1032,7 @@
   }
   
   .flip-box-front {
+       background-color: rgb(22, 22, 22);
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -1033,6 +1051,7 @@
   }
   
   .flip-box-back {
+    background-color: black;
     position: absolute;
     top: 0;
     left: 0;
