@@ -803,20 +803,23 @@ margin-bottom: 3rem;
 /* todo                         footer CSS                       */
 
 .footer{
-    background-color: #292c2f;
-    color: #bbb;
+    background-color: #F2FEDC;
+    /* background: linear-gradient(90deg, rgba(249,248,113,1) 10%, rgba(246,220,142,1) 69%); */
 }
 .footer-holder{
     border-bottom:2px white solid;
 }
 .footer-logo{
     margin-inline: 0 !important;
+    height: 70px;
 }
 .footer-logo img{
     height: 55px;
     will-change: scroll-position;
     width: 200px;
     margin-top: .6rem;
+    box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
+
 }
 .description {
     margin-block: 1.5rem;
@@ -849,14 +852,15 @@ margin-bottom: 3rem;
 }
 .links ol li a {
     text-decoration: none;
-    color: white;
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
+    color: rgb(43, 43, 43);
 }
 .copyright{
     font-family: 'EB Garamond', serif;
     font-size: 1rem;
     text-align: center;
     margin-top: .4rem;
+    font-weight: bold;
 }
 /* todo                         footer CSS                       */

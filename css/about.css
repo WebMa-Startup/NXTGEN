@@ -13,6 +13,16 @@ font-family: 'Roboto Mono', monospace;
 
 
  /*                            navbar CSS                    */
+
+ .navbar{
+    padding: 0 0 !important;
+ }
+ .commonninja-ribbon-link{
+    display: none !important;
+ }
+ .sc-kAyceB .jjnnfO .commonninja-ribbon {
+    display: none !important;
+ }
 .navbar-brand>.brand-img {
 
     height: 2.3em;
@@ -68,8 +78,8 @@ font-family: 'Roboto Mono', monospace;
 
 .about-holder {
     height: 90vh;
-
-    background-image: url(https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
+    background-image: url(https://plus.unsplash.com/premium_photo-1674677529880-5e1a668487d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=973&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80); */
     background-repeat: no-repeat;
     background-size: cover;
     /* background-image: url(https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80); */
@@ -84,9 +94,8 @@ font-family: 'Roboto Mono', monospace;
     height: 90vh;
     width: 100%;
     background: rgba(14, 14, 14, 0.14);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
 }
 
 .text-holder h1 {
@@ -132,11 +141,72 @@ font-family: 'Roboto Mono', monospace;
 }
 .about-img-1,.about-img-2,.about-img-3{
     background-color: #FFECCC;
-    border: 1px orange solid;
     border-radius: 25px;
     margin-block: 1rem;
+    box-shadow: 1px 1px 15px 7px rgba(230,132,18,0.45);
+-webkit-box-shadow: 1px 1px 15px 7px rgba(230,132,18,0.45);
+-moz-box-shadow: 1px 1px 15px 7px rgba(230,132,18,0.45);
 }
 .about-img-2{
     height:250px;
     width: 100%;
 }
+
+/*   todo                    Fun fact CSS */
+
+.fun-fact-holder{
+    padding: 0 20px;
+    background-color: #FFECCC;
+}
+.fun-content-holder {
+    
+}
+.fun-content-holder h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+    font-family: 'Bacasime Antique', serif;
+    text-align: center;
+    color: #f7ba53;
+}
+.fun-content-holder p{
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-block: 1rem;
+    margin-block: 1.4rem;
+}
+  .wrapper {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .container-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 20%);
+    background-color:rgb(17, 17,17);
+    border-radius: 10px;
+    font-family: 'EB Garamond', serif;
+  }
+  .container-loader i {
+    font-size: 3.5rem;
+    color: #f7ba53;
+  }
+  .container-loader  .num {
+    font-size: 2.5rem;
+    color: #f7ba53;
+    font-size: bolder;
+  }
+  .container-loader .text {
+    font-size: 1.7rem;
+    color: #f7ba53;
+    font-weight: bolder;
+    margin-block: 1rem;
+  }
