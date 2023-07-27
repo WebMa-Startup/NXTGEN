@@ -12,17 +12,20 @@ font-family: 'Roboto Mono', monospace;
  */
 
 
- /*                            navbar CSS                    */
+/*                            navbar CSS                    */
 
- .navbar{
+.navbar {
     padding: 0 0 !important;
- }
- .commonninja-ribbon-link{
+}
+
+.commonninja-ribbon-link {
     display: none !important;
- }
- .sc-kAyceB .jjnnfO .commonninja-ribbon {
+}
+
+.sc-kAyceB .jjnnfO .commonninja-ribbon {
     display: none !important;
- }
+}
+
 .navbar-brand>.brand-img {
 
     height: 2.3em;
@@ -77,11 +80,13 @@ font-family: 'Roboto Mono', monospace;
 /*                          End Of Nav CSS                  */
 
 .about-holder {
-    height: 90vh;
-    background-image: url(https://plus.unsplash.com/premium_photo-1674677529880-5e1a668487d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=973&q=80);
+    height: 65svh;
+    background-image: url(https://www.joshwcomeau.com/_next/image/?url=%2Fimages%2Fshadow-palette%2Fslopes.png&w=3840&q=75);
     /* background-image: url(https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80); */
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-origin: border-box;
     /* background-image: url(https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80); */
 }
 
@@ -91,16 +96,17 @@ font-family: 'Roboto Mono', monospace;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    height: 65svh;
     width: 100%;
     background: rgba(14, 14, 14, 0.14);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-weight: bolder;
 }
 
 .text-holder h1 {
     font-family: 'EB Garamond', serif;
-    height: 180px !important;
+    height: max-content !important;
     height: max-content;
     font-size: 5rem;
     margin-top: 3rem;
@@ -111,102 +117,306 @@ font-family: 'Roboto Mono', monospace;
     font-family: 'EB Garamond', serif;
     font-weight: bolder;
     font-size: 1.3rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: block;
-    color:white;
+    color: white;
 }
 
 .text-holder i {
     color: orange;
-    
+
 }
 
 /*                   todo     container-01 css */
+.about-us-container-01 {
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(33,32,32,1) 100%);
+    color: white; */
+}
 
-.about-us-container-01 h1{
+.about-us-container-01 h1 {
     font-size: 2.5rem;
     font-weight: bolder;
     margin-top: 1.5rem;
     font-family: 'Bacasime Antique', serif
 }
-.about-us-container-01 p{
+
+.about-us-container-01 p {
     font-family: 'EB Garamond', serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: justify;
-    margin-block:1rem ;
+    margin-block: 1rem;
 }
 
-.about-img-holder-01{
-    
-}
-.about-img-1,.about-img-2,.about-img-3{
-    background-color: #FFECCC;
+.about-img-holder-01 {}
+
+.about-img-1,
+.about-img-2,
+.about-img-3 {
+    background-color: rgb(27, 27, 27);
     border-radius: 25px;
     margin-block: 1rem;
-    box-shadow: 1px 1px 15px 7px rgba(230,132,18,0.45);
--webkit-box-shadow: 1px 1px 15px 7px rgba(230,132,18,0.45);
--moz-box-shadow: 1px 1px 15px 7px rgba(230,132,18,0.45);
+    /* background:#FFFFFF ; */
+    background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
 }
-.about-img-2{
-    height:250px;
+
+.about-img-2 {
+    height: 250px;
     width: 100%;
 }
 
 /*   todo                    Fun fact CSS */
 
-.fun-fact-holder{
-    padding: 0 20px;
-    background-color: #FFECCC;
+.fun-fact-holder {
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(33,32,32,1) 100%); */
 }
-.fun-content-holder {
-    
-}
-.fun-content-holder h1{
+
+.fun-content-holder {}
+
+.fun-content-holder h1 {
     font-size: 3rem;
     font-weight: bolder;
     margin-top: 1.5rem;
     font-family: 'Bacasime Antique', serif;
     text-align: center;
-    color: #f7ba53;
+    /* color: #f7ba53; */
+    color: rgb(25, 0, 255);
 }
-.fun-content-holder p{
+
+.fun-content-holder p {
     text-align: justify;
     font-family: 'EB Garamond', serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: justify;
     margin-block: 1rem;
     margin-block: 1.4rem;
+    /* color: white; */
 }
-  .wrapper {
-   
+
+.wrapper {
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 25px;
-  }
-  .container-loader {
+
+}
+
+.container-loader {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: calc(100% - 20%);
-    background-color:rgb(17, 17,17);
+    background-color: rgb(25, 0, 255);
     border-radius: 10px;
     font-family: 'EB Garamond', serif;
-  }
-  .container-loader i {
+    background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+}
+
+.container-loader i {
     font-size: 3.5rem;
-    color: #f7ba53;
-  }
-  .container-loader  .num {
+    color: blue;
+}
+
+.container-loader .num {
     font-size: 2.5rem;
-    color: #f7ba53;
+    color: #F27F3D;
     font-size: bolder;
-  }
-  .container-loader .text {
+}
+
+.container-loader .text {
     font-size: 1.7rem;
-    color: #f7ba53;
+    /* color: #f7ba53; */
+    color: blue;
     font-weight: bolder;
     margin-block: 1rem;
-  }
+}
+
+/* todo                        mission CSS                            */
+.vision-holder{
+    margin-block: 1.5rem;
+}
+.mission-img {
+    margin-top: 1.5rem;
+}
+
+.mission-img img {
+    width: 100%;
+}
+
+.mission-holder {
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.mission-holder h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+    font-family: 'Bacasime Antique', serif;
+    color: blue;
+}
+.mission-holder i{
+    color: blue;
+    margin-inline: 1rem;
+}
+
+.mission-holder p {
+
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-block: 1rem;
+}
+
+/* todo                     Brand Purpose CSS                 */
+.brand-purpose img{
+    height: max-content;
+}
+.brand-purpose h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+    font-family: 'Bacasime Antique', serif;
+    color:#6640AA;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.brand-purpose p{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-block: 1rem;
+}
+.brand-purpose span{
+    color: #6640AA;
+    font-weight: bold;
+}
+.third-btn a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: 2px #00236B solid;
+    background:#6640AA;
+    border-radius: 25px;
+    margin-block: 2.8rem;
+}
+
+
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: white;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #F27F3D;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+/* todo                         footer CSS                       */
+
+.footer{
+    background-color:#FFFFFF;
+    /* background: linear-gradient(90deg, rgba(249,248,113,1) 10%, rgba(246,220,142,1) 69%); */
+}
+.footer-holder{
+    border-bottom:2px black solid;
+}
+.footer-logo{
+    margin-inline: 0 !important;
+    height:80px;
+}
+.footer-logo img{
+    height:60px;
+    will-change: scroll-position;
+    width: 200px;
+    margin-top: 1rem;
+    box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
+
+}
+.description {
+    margin-block: 1.5rem;
+    overflow: hidden !important;
+}
+.description h3{
+    text-align:justify;
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    height: 65px;
+}
+.description p{
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    margin-block: 1rem;
+}
+.links{
+    text-align: center;
+    margin-top: 2%;
+}
+.links h3{
+    font-family: 'EB Garamond', serif;
+    font-size:2.2rem;
+    height: 45px;
+}
+.links ol{
+    padding: 0 !important;
+    list-style: none;
+   
+}
+.links ol li a {
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+    color: rgb(43, 43, 43);
+}
+.copyright{
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .4rem;
+    font-weight: bold;
+}
+/* todo                         footer CSS                       */

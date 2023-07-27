@@ -18,9 +18,18 @@ font-family: 'Roboto Mono', monospace;
 
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+   overflow-x: hidden;
+ -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
-
+*::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    display: flex !important;
+   
+    justify-content: center !important;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -58,6 +67,7 @@ html {
     position: fixed;
     z-index: 999999;
     top: 0;
+    width: 90%;
 }
 
 .navbar-link {
@@ -113,7 +123,7 @@ html {
 }
 
 .main-text {
-    height: 4.5em;
+    height:max-content;
     text-align: center;
     font-family: 'EB Garamond', serif;
     font-size: 3rem;
@@ -132,7 +142,7 @@ html {
 
     text-align: center;
     font-family: 'Chela One', cursive;
-    margin-top: -4.5rem;
+    margin-top: -10rem;
     display: flex;
     align-items: center;
     justify-content: center
@@ -803,21 +813,21 @@ margin-bottom: 3rem;
 /* todo                         footer CSS                       */
 
 .footer{
-    background-color: #F2FEDC;
+    background-color:#FFFFFF;
     /* background: linear-gradient(90deg, rgba(249,248,113,1) 10%, rgba(246,220,142,1) 69%); */
 }
 .footer-holder{
-    border-bottom:2px white solid;
+    border-bottom:2px black solid;
 }
 .footer-logo{
     margin-inline: 0 !important;
-    height: 70px;
+    height:80px;
 }
 .footer-logo img{
-    height: 55px;
+    height:60px;
     will-change: scroll-position;
     width: 200px;
-    margin-top: .6rem;
+    margin-top: 1rem;
     box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
 
 }
@@ -848,7 +858,7 @@ margin-bottom: 3rem;
 }
 .links ol{
     padding: 0 !important;
-   
+   list-style: none;
 }
 .links ol li a {
     text-decoration: none;
