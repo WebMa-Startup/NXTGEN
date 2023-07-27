@@ -199,7 +199,7 @@
   }
   .flip-box .flip-box-back .inner .back-para{
     font-size: 15px;
-    line-height: 23px;
+    /* line-height: 23px; */
   }
   
   .flip-box-img {
@@ -908,11 +908,13 @@
     /* top: 43%; */
   }
   .flip-box .flip-box-front .inner{
-    margin-top: 150px;
+    margin-top: 130px;
+    overflow: hidden !important;
     /* padding: 10px; */
   }
   .flip-box .flip-box-back .inner{
-    margin-top: 69%;
+    margin-top: 71%;
+    overflow: hidden !important;
     /* padding: 10px; */
   }
   
@@ -922,7 +924,7 @@
   }
   .flip-box-back .inner > p{
     font-size: 15px;
-    line-height: 23px;
+    line-height: 25px;
   
   } 
   /* .flip-box-back .inner > .flip-box-button{
@@ -1091,6 +1093,8 @@ scroll-behavior: none;
   }
   .flip-box .flip-box-front .inner{
     margin-top: 160px;
+    gap: 10px;
+    line-height: 24px;
     /* padding: 10px; */
   }
   .flip-box .flip-box-back .inner{
@@ -1104,6 +1108,7 @@ scroll-behavior: none;
   }
   .flip-box-back .inner > p{
     font-size: 15px;
+    line-height: 24px;
   
   } 
   /* .flip-box-back .inner > .flip-box-button{

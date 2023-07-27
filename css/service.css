@@ -1,10 +1,13 @@
-*{
+  @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Butcherman&family=Emblema+One&family=Ewert&family=Fondamento&family=Gotu&family=IM+Fell+DW+Pica+SC&family=Julee&family=Metal+Mania&family=Overlock+SC&family=Rampart+One&family=Rye&family=Sancreek&family=Sansita+Swashed&family=Vollkorn+SC:wght@600;700&family=Ysabeau+SC:wght@400;500&display=swap');
+
+
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: #FFE5B4;
 }
 
 @media (min-width:250px) {
@@ -20,7 +23,7 @@ body{
     }
     .service_banner .banner_heading{
         position: absolute;
-        top: 8%;
+        top: 12%;
         bottom: 0;
         left: 0;
         right: 0;
@@ -29,7 +32,6 @@ body{
         text-transform: capitalize;
         font-weight: 700;
         /* padding-top: 60px; */
-        height: 30px;
         color: aliceblue;
     }
     .service_banner ol li a{
@@ -53,15 +55,21 @@ body{
     }
     .main-service-content{
         text-align: center;
-        background-color: black;
-        color: white;
+        background-color: #FFE5B4;
+        color: rgb(0, 0, 0);
     }.main-service-content>h2{
+        font-family: 'Aladin', cursive;
         margin: 10px 0;
+        letter-spacing: 2px;
     
     }
     .main-service-content>P{
+        font-family: 'Aref Ruqaa', serif;
+        font-size: 20px;
+        text-transform: capitalize;
         line-height: 25px;
-        text-align: justify;
+        text-align:justify ;
+        /* text-align: center; */
         letter-spacing: 1px;
     }
     .service-col img{
@@ -71,10 +79,11 @@ body{
         text-align: center;
     }
     .service-col-content>h2{
+        font-family: 'Aladin', cursive;
         font-size: 24px;
         font-weight: 700;
         margin:15px 0;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     .service-col-content>p{
         text-align: justify;
@@ -105,7 +114,7 @@ body{
         background-color: rgb(241, 99, 48);
     }
     .line-3{
-        background-color: rgb(240, 240, 58);
+        background-color: #DFFF00;
     }
     .line-4{
         background-color: rgb(94, 94, 226);
@@ -161,7 +170,6 @@ body{
         text-transform: capitalize;
         font-weight: 700;
         /* padding-top: 60px; */
-        height: 30px;
         color: aliceblue;
     }
     .service_banner ol li a{
@@ -185,15 +193,20 @@ body{
     }
     .main-service-content{
         text-align: center;
-        background-color: black;
-        color: white;
+        background-color: #FFE5B4;
+        color: rgb(0, 0, 0);
     }.main-service-content>h2{
+        font-family: 'Aladin', cursive;
         margin: 10px 0;
     
     }
     .main-service-content>P{
+        font-family: 'Aref Ruqaa', serif;
+        font-size: 20px;
+        text-transform: capitalize;
         line-height: 25px;
-        text-align: justify;
+        text-align:justify ;
+        /* text-align: center; */
         letter-spacing: 1px;
     }
     .service-col img{
@@ -203,10 +216,11 @@ body{
         text-align: center;
     }
     .service-col-content>h2{
+        font-family: 'Aladin', cursive;
         font-size: 24px;
         font-weight: 700;
         margin:15px 0;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     .service-col-content>p{
         text-align: justify;
@@ -237,7 +251,7 @@ body{
         background-color: rgb(241, 99, 48);
     }
     .line-3{
-        background-color: rgb(240, 240, 58);
+        background-color: #DFFF00;
     }
     .line-4{
         background-color: rgb(94, 94, 226);
@@ -292,7 +306,6 @@ body{
         text-transform: capitalize;
         font-weight: 700;
         /* padding-top: 60px; */
-        height: 30px;
         color: aliceblue;
     }
     .service_banner ol li a{
@@ -316,15 +329,21 @@ body{
     }
     .main-service-content{
         text-align: center;
-        background-color: black;
-        color: white;
+        background-color: #FFE5B4;
+        color: rgb(0, 0, 0);
     }.main-service-content>h2{
+        font-family: 'Aladin', cursive;
         margin: 10px 0;
+        letter-spacing: 2px;
     
     }
     .main-service-content>P{
+        font-family: 'Aref Ruqaa', serif;
+        font-size: 20px;
+        text-transform: capitalize;
         line-height: 25px;
-        text-align: justify;
+        text-align:justify ;
+        /* text-align: center; */
         letter-spacing: 1px;
     }
     .service-col img{
@@ -334,10 +353,11 @@ body{
         text-align: center;
     }
     .service-col-content>h2{
+        font-family: 'Aladin', cursive;
         font-size: 24px;
         font-weight: 700;
         margin:15px 0;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     .service-col-content>p{
         text-align: justify;
@@ -368,7 +388,7 @@ body{
         background-color: rgb(241, 99, 48);
     }
     .line-3{
-        background-color: rgb(240, 240, 58);
+        background-color: #DFFF00;
     }
     .line-4{
         background-color: rgb(94, 94, 226);
@@ -423,7 +443,6 @@ body{
         text-transform: capitalize;
         font-weight: 700;
         /* padding-top: 60px; */
-        height: 30px;
         color: aliceblue;
     }
     .service_banner ol li a{
@@ -447,16 +466,22 @@ body{
     }
     .main-service-content{
         text-align: center;
-        background-color: black;
+        background-color: #FFE5B4;
         padding-top: 20px;
-        color: white;
+        color: rgb(0, 0, 0);
     }.main-service-content>h2{
+        font-family: 'Aladin', cursive;
         margin: 10px 0;
+        letter-spacing: 2px;
     
     }
     .main-service-content>P{
+        font-family: 'Aref Ruqaa', serif;
+        font-size: 20px;
+        text-transform: capitalize;
         line-height: 25px;
-        text-align: justify;
+        text-align:justify ;
+        /* text-align: center; */
         letter-spacing: 1px;
     }
     .service-col img{
@@ -466,10 +491,11 @@ body{
         text-align: center;
     }
     .service-col-content>h2{
+        font-family: 'Aladin', cursive;
         font-size: 24px;
         font-weight: 700;
         margin:15px 0;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     .service-col-content>p{
         text-align: justify;
@@ -500,7 +526,7 @@ body{
         background-color: rgb(241, 99, 48);
     }
     .line-3{
-        background-color: rgb(240, 240, 58);
+        background-color: #DFFF00;
     }
     .line-4{
         background-color: rgb(94, 94, 226);
@@ -557,7 +583,6 @@ body{
         text-transform: capitalize;
         font-weight: 700;
         /* padding-top: 60px; */
-        height: 30px;
         color: aliceblue;
     }
     .service_banner ol li a{
@@ -581,15 +606,21 @@ body{
     }
     .main-service-content{
         text-align: center;
-        background-color: black;
-        color: white;
+        background-color: #FFE5B4;
+        color: rgb(0, 0, 0);
     }.main-service-content>h2{
+        font-family: 'Aladin', cursive;
         margin: 10px 0;
+        letter-spacing: 2px;
     
     }
     .main-service-content>P{
+        font-family: 'Aref Ruqaa', serif;
+        font-size: 20px;
+        text-transform: capitalize;
         line-height: 25px;
-        text-align: justify;
+        text-align:justify ;
+        /* text-align: center; */
         letter-spacing: 1px;
     }
     .service-col img{
@@ -599,10 +630,11 @@ body{
         text-align: center;
     }
     .service-col-content>h2{
+        font-family: 'Aladin', cursive;
         font-size: 24px;
         font-weight: 700;
         margin:15px 0;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     .service-col-content>p{
         text-align: justify;
@@ -633,7 +665,7 @@ body{
         background-color: rgb(241, 99, 48);
     }
     .line-3{
-        background-color: rgb(240, 240, 58);
+        background-color: #DFFF00;
     }
     .line-4{
         background-color: rgb(94, 94, 226);
@@ -716,18 +748,22 @@ body{
     }
     .main-service-content{
         text-align: center;
-        background-color: black;
+        background-color: #FFE5B4;
         margin: 0 auto;
         width: 70%;
         padding-top: 30px;
-        color: white;
+        color: rgb(0, 0, 0);
     }.main-service-content>h2{
+        font-family: 'Aladin', cursive;
         margin: 10px 0;
     
     }
     .main-service-content>P{
+        font-family: 'Aref Ruqaa', serif;
+        font-size: 20px;
+        text-transform: capitalize;
         line-height: 25px;
-        /* text-align: justify; */
+        /* text-aligify; */
         letter-spacing: 1px;
     }
     .service-col img{
@@ -738,13 +774,17 @@ body{
         margin: 3rem 0 0 0;
     }
     .service-col-content>h2{
-        font-size: 24px;
+        font-family: 'Aladin', cursive;
+        font-size: 28px;
+        text-transform: uppercase;
         font-weight: 700;
         margin:15px 0;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
     .service-col-content>p{
         text-align: justify;
+        font-size: 19px;
+        /* text-transform: capitalize; */
     }
     .service-img{
         /* margin: 4rem 0 0 0; */
@@ -772,7 +812,7 @@ body{
         background-color: rgb(241, 99, 48);
     }
     .line-3{
-        background-color: rgb(240, 240, 58);
+        background-color: #DFFF00;
     }
     .line-4{
         background-color: rgb(94, 94, 226);
