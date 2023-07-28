@@ -13,17 +13,13 @@ font-family: 'Roboto Mono', monospace;
 
 
 /*                            navbar CSS                    */
+nav {
+    display: flex !important;
+    justify-content: center !important;
+}
 
 .navbar {
     padding: 0 0 !important;
-}
-
-.commonninja-ribbon-link {
-    display: none !important;
-}
-
-.sc-kAyceB .jjnnfO .commonninja-ribbon {
-    display: none !important;
 }
 
 .navbar-brand>.brand-img {
@@ -51,6 +47,7 @@ font-family: 'Roboto Mono', monospace;
     position: fixed;
     z-index: 999999;
     top: 0;
+    width: 90%;
 }
 
 .navbar-link {
@@ -81,7 +78,8 @@ font-family: 'Roboto Mono', monospace;
 
 .about-holder {
     height: 65svh;
-    background-image: url(https://www.joshwcomeau.com/_next/image/?url=%2Fimages%2Fshadow-palette%2Fslopes.png&w=3840&q=75);
+    background-image: url(../assets/About\ me-pana.svg);
+    /* background-image: url(https://www.joshwcomeau.com/_next/image/?url=%2Fimages%2Fshadow-palette%2Fslopes.png&w=3840&q=75); */
     /* background-image: url(https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,8 +97,8 @@ font-family: 'Roboto Mono', monospace;
     height: 65svh;
     width: 100%;
     background: rgba(14, 14, 14, 0.14);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     font-weight: bolder;
 }
 
@@ -131,6 +129,15 @@ font-family: 'Roboto Mono', monospace;
 .about-us-container-01 {
     /* background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(33,32,32,1) 100%);
     color: white; */
+    /* background: hsla(222, 66%, 77%, 1);
+
+background: linear-gradient(90deg, hsla(222, 66%, 77%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(222, 66%, 77%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(222, 66%, 77%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", endColorstr="#B9DCF2", GradientType=1 ); */
 }
 
 .about-us-container-01 h1 {
@@ -156,9 +163,17 @@ font-family: 'Roboto Mono', monospace;
     border-radius: 25px;
     margin-block: 1rem;
     /* background:#FFFFFF ; */
-    background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
-    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    /* background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF; */
+    background: linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
+
+    background: -moz-linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
+
+    background: -webkit-linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAEFD7", endColorstr="#ABC9E9", GradientType=1);
 }
+
 
 .about-img-2 {
     height: 250px;
@@ -169,6 +184,17 @@ font-family: 'Roboto Mono', monospace;
 
 .fun-fact-holder {
     /* background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(33,32,32,1) 100%); */
+    /* background: hsla(313, 39%, 93%, 1);
+
+    background: linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(237, 66%, 72%, 1) 0%, hsla(193, 81%, 84%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(237, 66%, 72%, 1) 0%, hsla(193, 81%, 84%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(237, 66%, 72%, 1) 0%, hsla(193, 81%, 84%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F4E6F1", endColorstr="#8A8EE7", GradientType=1);
+    padding-bottom: 3rem;
+    padding-top: 1rem; */
 }
 
 .fun-content-holder {}
@@ -209,11 +235,19 @@ font-family: 'Roboto Mono', monospace;
     justify-content: center;
     flex-direction: column;
     width: calc(100% - 20%);
-    background-color: rgb(25, 0, 255);
     border-radius: 10px;
     font-family: 'EB Garamond', serif;
-    background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
-    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
+    /* background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF; */
+    background: hsla(141, 54%, 86%, 1);
+
+    background: linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
+
+    background: -moz-linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
+
+    background: -webkit-linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAEFD7", endColorstr="#ABC9E9", GradientType=1);
 }
 
 .container-loader i {
@@ -236,9 +270,10 @@ font-family: 'Roboto Mono', monospace;
 }
 
 /* todo                        mission CSS                            */
-.vision-holder{
+.vision-holder {
     margin-block: 1.5rem;
 }
+
 .mission-img {
     margin-top: 1.5rem;
 }
@@ -263,7 +298,8 @@ font-family: 'Roboto Mono', monospace;
     font-family: 'Bacasime Antique', serif;
     color: blue;
 }
-.mission-holder i{
+
+.mission-holder i {
     color: blue;
     margin-inline: 1rem;
 }
@@ -277,29 +313,32 @@ font-family: 'Roboto Mono', monospace;
 }
 
 /* todo                     Brand Purpose CSS                 */
-.brand-purpose img{
+.brand-purpose img {
     height: max-content;
 }
-.brand-purpose h1{
+
+.brand-purpose h1 {
     font-size: 2.5rem;
     font-weight: bolder;
     margin-top: 1.5rem;
     font-family: 'Bacasime Antique', serif;
-    color:#6640AA;
+    color: #6640AA;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.brand-purpose p{
+.brand-purpose p {
     font-family: 'EB Garamond', serif;
     font-size: 1.5rem;
     text-align: justify;
     margin-block: 1rem;
 }
-.brand-purpose span{
+
+.brand-purpose span {
     color: #6640AA;
     font-weight: bold;
 }
+
 .third-btn a {
     text-decoration: none;
     color: white;
@@ -312,7 +351,7 @@ font-family: 'Roboto Mono', monospace;
     padding: 12px 18px;
     transition: all 0.2s ease;
     border: 2px #00236B solid;
-    background:#6640AA;
+    background: #6640AA;
     border-radius: 25px;
     margin-block: 2.8rem;
 }
@@ -356,67 +395,79 @@ font-family: 'Roboto Mono', monospace;
 
 /* todo                         footer CSS                       */
 
-.footer{
-    background-color:#FFFFFF;
+.footer {
+    background-color: #FFFFFF;
     /* background: linear-gradient(90deg, rgba(249,248,113,1) 10%, rgba(246,220,142,1) 69%); */
 }
-.footer-holder{
-    border-bottom:2px black solid;
+
+.footer-holder {
+    border-bottom: 2px black solid;
 }
-.footer-logo{
+
+.footer-logo {
     margin-inline: 0 !important;
-    height:80px;
+    height: 80px;
 }
-.footer-logo img{
-    height:60px;
+
+.footer-logo img {
+    height: 60px;
     will-change: scroll-position;
     width: 200px;
     margin-top: 1rem;
     box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
 
 }
+
 .description {
     margin-block: 1.5rem;
     overflow: hidden !important;
 }
-.description h3{
-    text-align:justify;
+
+.description h3 {
+    text-align: justify;
     font-family: 'EB Garamond', serif;
     font-weight: bolder;
     font-size: 1.6rem;
     height: 65px;
 }
-.description p{
+
+.description p {
     text-align: justify;
     font-family: 'EB Garamond', serif;
     font-size: 1.2rem;
     margin-block: 1rem;
 }
-.links{
+
+.links {
     text-align: center;
     margin-top: 2%;
 }
-.links h3{
+
+.links h3 {
     font-family: 'EB Garamond', serif;
-    font-size:2.2rem;
+    font-size: 2.2rem;
     height: 45px;
 }
-.links ol{
+
+.links ol {
     padding: 0 !important;
     list-style: none;
-   
+
 }
+
 .links ol li a {
     text-decoration: none;
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
     color: rgb(43, 43, 43);
 }
-.copyright{
+
+.copyright {
     font-family: 'EB Garamond', serif;
     font-size: 1rem;
     text-align: center;
     margin-top: .4rem;
     font-weight: bold;
 }
+
 /* todo                         footer CSS                       */

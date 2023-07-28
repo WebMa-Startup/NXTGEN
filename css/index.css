@@ -19,11 +19,19 @@ font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
 }
-nav{
+
+/* -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+*::-webkit-scrollbar{
+    display: none;
+} */
+nav {
     display: flex !important;
-   
+
     justify-content: center !important;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -117,7 +125,7 @@ html {
 }
 
 .main-text {
-    height:max-content;
+    height: max-content;
     text-align: center;
     font-family: 'EB Garamond', serif;
     font-size: 3rem;
@@ -418,7 +426,7 @@ strong {
     overflow-x: hidden;
     margin-top: -1rem;
     height: 320px;
-    background-image: url(../assets/techny-email-marketing-and-newsletter-min.gif);
+    background-image: url(../assets/Digital\ tools-bro.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -433,12 +441,13 @@ strong {
 }
 
 .first-content-header {
-    background: linear-gradient(to right, #232324 45%, #141616 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-family: 'Chela One', cursive;
     font-size: 2.5rem;
     text-align: center;
+    background-image: url(../assets/Abstract\ Triangle.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .first-header-content {
@@ -526,6 +535,10 @@ strong {
     margin-top: 1rem;
     text-align: center;
     font-family: 'Bacasime Antique', serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/Idea.png);
 }
 
 .second-sub-text {
@@ -533,7 +546,7 @@ strong {
     font-weight: bold;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     /* font-family: 'Bacasime Antique', serif */
 }
 
@@ -571,7 +584,7 @@ strong {
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    text-align: justify !important; 
+    text-align: justify !important;
 }
 
 /* todo                       End Of Main Second Division CSS  */
@@ -581,20 +594,31 @@ strong {
     /* background-image: url(../assets/blob-scene-haikei-md-white.svg); */
 }
 
- .third-holder-01,third-holder-02,third-holder-03{
+.third-holder-01,
+third-holder-02,
+third-holder-03 {
     /* background-image: url(../../../Downloads/wave-haikei\ \(1\).svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-} 
+}
+
 .third-header {
     text-align: center;
+    background-image: url(../assets/Flash\ Sale.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .third-header h2 {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
     font-weight: bolder !important;
-    margin-block: 3rem;
+    margin-top: 1.5rem;
     text-align: center;
     font-family: 'Bacasime Antique', serif;
 }
@@ -604,7 +628,7 @@ strong {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 4rem;
+    margin-top: -1rem;
 }
 
 .img-1 {
@@ -614,6 +638,7 @@ strong {
 
 .img-2 {
     background-image: url(../assets/customer-relationship-management-animate.svg);
+    background-size: contain;
 }
 
 .img-3 {
@@ -655,6 +680,10 @@ strong {
     margin-top: 2rem;
     padding-block: 20px;
     text-align: center;
+    background-image: url(../assets/One\ Day\ Sale.png);
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .fourth-card-01,
@@ -690,16 +719,16 @@ strong {
 /* todo                 End of  fourth-header Division CSS */
 
 /* todo                        Review Section CSS           */
-.review{
+.review {
     /* background-color: #F2FEDC; */
-    background-image: url(../../../Downloads/low-poly-grid-haikei.svg);
+    background-image: url();
     /* margin-bottom: 1rem; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.slider-holder{
-    margin-block: 2rem;
+
+.slider-holder {
     /* background-image: url(../assets/wave-haikei.svg); */
     background-position: 100%;
     background-repeat: no-repeat;
@@ -708,6 +737,7 @@ strong {
     display: flex;
     align-items: center;
 }
+
 .review-header h2 {
     font-family: 'EB Garamond', serif;
     font-size: 2.5rem;
@@ -715,68 +745,82 @@ strong {
     margin-top: 1rem;
     padding-block: 20px;
     text-align: center;
+    background-image: url(../assets/Balloons.png);
+    background-position-x: center;
+    background-position-y: -100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.review-holder{
+.review-holder {
     margin-top: 1.3rem;
 }
-.profile-container{
-position: relative;
+
+.profile-container {
+    position: relative;
 }
-.profile-container img{
-     height: 100px;
-     width: 100px;
-     border-radius: 100px;
-     border: 10px #ffa500 solid;
-     border-radius: 100px;
-     margin-inline: .5rem;
+
+.profile-container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 10px #ffa500 solid;
+    border-radius: 100px;
+    margin-inline: .5rem;
 }
-.customer-review{
+
+.customer-review {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.customer-review p{
+
+.customer-review p {
     text-align: justify;
     font-family: 'EB Garamond', serif;
     font-size: 1.2rem;
     margin-block: 1rem;
     margin-inline: .8rem;
 }
-.customer-name{
+
+.customer-name {
     text-align: justify;
     font-family: 'EB Garamond', serif;
     font-size: 1.6rem;
     font-weight: bolder;
     margin-inline: .5rem;
 }
-.btn-holder{
+
+.btn-holder {
     margin-block: 1rem;
     cursor: pointer;
     margin-inline: .5rem;
-    
+
 }
+
 .btn-holder button {
     margin-right: .8rem;
     border: none;
     background: transparent;
 }
+
 /* todo                   End Of Review Section CSS              */
 
 /*  todo              frequently asked question section          */
-.faq{
+.faq {
     /* background-color:#F9F871; */
-    background-image: url(../../../Downloads/stacked-waves-haikei.svg);
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.main-faq{
-margin-bottom: 3rem;
 
+.main-faq {
+    margin-bottom: 3rem;
 }
-.main-faq h2{
+
+.main-faq h2 {
     text-align: center;
     font-family: 'EB Garamond', serif;
     font-size: 2.5rem;
@@ -784,87 +828,110 @@ margin-bottom: 3rem;
     margin-top: 1rem;
     padding-block: 20px;
     margin-bottom: 1.3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/QA.png);
 }
+
 .question {
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
     font-weight: bolder;
     margin-inline: 0.5rem;
     padding-inline: 25px;
-   position: relative;
+    position: relative;
 }
-.plus{
+
+.plus {
     float: right;
     font-size: 1.7rem;
 }
 
-.question p{
+.question p {
     border-bottom: 2px black solid;
     padding-bottom: 10px;
 }
+
 /*  todo               frequently asked question section          */
 
 /* todo                         footer CSS                       */
 
-.footer{
-    background-color:#FFFFFF;
+.footer {
+    background-color: #FFFFFF;
     /* background: linear-gradient(90deg, rgba(249,248,113,1) 10%, rgba(246,220,142,1) 69%); */
 }
-.footer-holder{
-    border-bottom:2px black solid;
+
+.footer-holder {
+    border-bottom: 2px black solid;
 }
-.footer-logo{
+
+.footer-logo {
     margin-inline: 0 !important;
-    height:80px;
+    height: 80px;
 }
-.footer-logo img{
-    height:60px;
+
+.footer-logo img {
+    height: 60px;
     will-change: scroll-position;
     width: 200px;
     margin-top: 1rem;
     box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
 
 }
+
 .description {
     margin-block: 1.5rem;
     overflow: hidden !important;
 }
-.description h3{
-    text-align:justify;
+
+.description h3 {
+    text-align: justify;
     font-family: 'EB Garamond', serif;
     font-weight: bolder;
     font-size: 1.6rem;
     height: 65px;
 }
-.description p{
+
+.description p {
     text-align: justify;
     font-family: 'EB Garamond', serif;
     font-size: 1.2rem;
     margin-block: 1rem;
 }
-.links{
+
+.links {
     text-align: center;
 }
-.links h3{
+
+.links h3 {
     font-family: 'EB Garamond', serif;
-    font-size:2.2rem;
+    font-size: 2.2rem;
     height: 45px;
 }
-.links ol{
+
+.links ol {
     padding: 0 !important;
-   list-style: none;
+    list-style: none;
 }
+
 .links ol li a {
     text-decoration: none;
     font-family: 'EB Garamond', serif;
     font-size: 1.3rem;
     color: rgb(43, 43, 43);
 }
-.copyright{
+
+.copyright {
     font-family: 'EB Garamond', serif;
     font-size: 1rem;
     text-align: center;
     margin-top: .4rem;
     font-weight: bold;
 }
+
+.copyright p {
+    margin-bottom: 0;
+}
+
 /* todo                         footer CSS                       */
