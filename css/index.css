@@ -37,11 +37,7 @@ html {
 }
 
 /*  End Global Reset */
-.header {
 
-    background-color: black !important;
-    color: white !important;
-}
 
 /*                            navbar CSS                    */
 .navbar-brand>.brand-img {
@@ -54,12 +50,18 @@ html {
     margin-right: 0 !important;
 }
 
-.nav-container>button {
+.nav-container button {
     border: none !important;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
 .nav-container {
-    background-color: black;
+    background: rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
     margin-top: 10px;
     border-radius: 20px;
     cursor: pointer;
@@ -80,7 +82,8 @@ html {
 }
 
 .navbar-link .nav-link {
-    color: white !important;
+    /* color: white !important; */
+    color: black;
     font-family: 'Bacasime Antique', serif;
     /* font-family: 'VT323', monospace; */
     font-weight: bolder;
@@ -92,7 +95,7 @@ html {
 }
 
 .navbar-nav a:hover {
-    background-color: #0c0c0cce;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -103,17 +106,67 @@ html {
 
 /* todo                             content-holder */
 
+.box1 img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 9rem;
+    left: 1rem;
+    animation: 1s rotate ease-out infinite;
+}
+
+.box2 img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20rem;
+    right: 0;
+    animation: 3s goUp linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+
+}
+@keyframes goUp {
+    from {
+        transform: translateY(20rem);
+    }
+
+    to {
+        transform: translateY(-28rem);
+    }
+
+}
+
+/* elements css */
+
+.header {
+    background-image: url(https://img.freepik.com/free-vector/abstract-white-shapes-background_79603-1362.jpg?size=626&ext=jpg&ga=GA1.2.1036119937.1690626197&semt=ais);
+
+    /* background-image: url(https://t3.ftcdn.net/jpg/06/17/05/64/240_F_617056461_BnlQ54GwARztQebtJFdYBQtBjJ1rLQfg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .content-holder {
     height: 100vh;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url(../assets/log-in-girl.svg);
+    /* background: url(../assets/log-in-girl.svg); */
+    /* background: url(https://img.freepik.com/free-vector/white-minimal-hexagons-background_79603-1452.jpg?size=626&ext=jpg&ga=GA1.1.1036119937.1690626197&semt=ais); */
     background-size: contain;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .sub-holder {
@@ -434,6 +487,7 @@ strong {
 
 .first-content-holder {
     /* background-color: #EDF7FE; */
+    padding-inline: 15px;
 }
 
 .main-first-holder {
@@ -552,10 +606,9 @@ strong {
 
 /* todo                main-second card Css */
 .main-second-card {
-    width: 90%;
     border-radius: 10px;
     margin-bottom: 1.5rem;
-    /* background-color: #D9DAFF; */
+    background-color: #F5F5F5;
 }
 
 .card-holder {
@@ -564,6 +617,7 @@ strong {
     justify-content: center;
     flex-direction: column;
     background-color: white;
+    padding-inline: 25px;
 
 
 }
@@ -601,6 +655,7 @@ third-holder-03 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
+    background-color: #F5F5F5;
 }
 
 .third-header {
@@ -630,6 +685,8 @@ third-holder-03 {
     background-size: cover;
     margin-top: -1rem;
 }
+
+.third-first-content {}
 
 .img-1 {
     background-image: url(../assets/Digital\ transformation-bro.svg);
@@ -672,12 +729,16 @@ third-holder-03 {
 /* todo   End Of third  Division CSS*/
 
 /* todo  fourth-header Division CSS */
+.fourth-holder {
+    background-color: #F5F5F5;
+    padding-bottom: 1.5rem;
+}
 
 .fourth-header h2 {
     font-family: 'EB Garamond', serif;
     font-size: 2.5rem;
     font-weight: bolder;
-    margin-top: 2rem;
+    padding-top: 2rem;
     padding-block: 20px;
     text-align: center;
     background-image: url(../assets/One\ Day\ Sale.png);
@@ -716,6 +777,12 @@ third-holder-03 {
 
 }
 
+.fourth-card-01,
+.fourth-card-02 {
+    background-color: white;
+
+}
+
 /* todo                 End of  fourth-header Division CSS */
 
 /* todo                        Review Section CSS           */
@@ -726,6 +793,8 @@ third-holder-03 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #EDF7FE;
+    padding-bottom: 1.5rem;
 }
 
 .slider-holder {
@@ -736,20 +805,25 @@ third-holder-03 {
     /* height: 80vh; */
     display: flex;
     align-items: center;
+    background-color: white;
+    padding-bottom: 1rem;
+}
+
+.review-header {
+    background-image: url(../assets/Balloons.png);
+    background-position-x: center;
+    background-position-y: -100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
 }
 
 .review-header h2 {
     font-family: 'EB Garamond', serif;
     font-size: 2.5rem;
     font-weight: bolder;
-    margin-top: 1rem;
-    padding-block: 20px;
     text-align: center;
-    background-image: url(../assets/Balloons.png);
-    background-position-x: center;
-    background-position-y: -100%;
-    background-size: contain;
-    background-repeat: no-repeat;
+
 }
 
 .review-holder {
@@ -814,6 +888,18 @@ third-holder-03 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: white;
+    border-bottom: 2px black solid;
+    /* background: hsla(216, 54%, 84%, 1);
+
+background: linear-gradient(90deg, hsla(216, 54%, 84%, 1) 0%, hsla(216, 82%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(216, 54%, 84%, 1) 0%, hsla(216, 82%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(216, 54%, 84%, 1) 0%, hsla(216, 82%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BFD1EC", endColorstr="#83B0F3", GradientType=1 ); */
+    padding-bottom: .5rem;
 }
 
 .main-faq {
@@ -826,7 +912,7 @@ third-holder-03 {
     font-size: 2.5rem;
     font-weight: bolder;
     margin-top: 1rem;
-    padding-block: 20px;
+    padding-top: 2rem;
     margin-bottom: 1.3rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -869,6 +955,7 @@ third-holder-03 {
 .footer-logo {
     margin-inline: 0 !important;
     height: 80px;
+    padding-top: 1rem;
 }
 
 .footer-logo img {
@@ -906,8 +993,11 @@ third-holder-03 {
 
 .links h3 {
     font-family: 'EB Garamond', serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     height: 45px;
+    font-weight: bolder;
+    border-bottom: 2px orange solid;
+    display: inline-block;
 }
 
 .links ol {

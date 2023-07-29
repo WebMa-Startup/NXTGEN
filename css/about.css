@@ -32,12 +32,18 @@ nav {
     margin-right: 0 !important;
 }
 
-.nav-container>button {
+.nav-container button {
     border: none !important;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
 .nav-container {
-    background-color: black;
+    background: rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
     margin-top: 10px;
     border-radius: 20px;
     cursor: pointer;
@@ -58,7 +64,7 @@ nav {
 }
 
 .navbar-link .nav-link {
-    color: white !important;
+    color: black;
     font-family: 'Bacasime Antique', serif;
     /* font-family: 'VT323', monospace; */
     font-weight: bolder;
@@ -165,13 +171,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     /* background:#FFFFFF ; */
     /* background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
     box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF; */
-    background: linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
 
-    background: -moz-linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
-
-    background: -webkit-linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAEFD7", endColorstr="#ABC9E9", GradientType=1);
+    background-image: url(https://img.freepik.com/free-vector/purple-fluid-background-frame_53876-99020.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -237,18 +240,12 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     width: calc(100% - 20%);
     border-radius: 10px;
     font-family: 'EB Garamond', serif;
-    /* background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
-    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF; */
-    background: hsla(141, 54%, 86%, 1);
+    background: linear-gradient(145deg, #FFFFFF, #f0eeee);
+    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
 
-    background: linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
 
-    background: -moz-linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
-
-    background: -webkit-linear-gradient(180deg, hsla(141, 54%, 86%, 1) 0%, hsla(211, 58%, 79%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAEFD7", endColorstr="#ABC9E9", GradientType=1);
 }
+
 
 .container-loader i {
     font-size: 3.5rem;
@@ -257,7 +254,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
 
 .container-loader .num {
     font-size: 2.5rem;
-    color: #F27F3D;
+    color: #0000FF;
     font-size: bolder;
 }
 
@@ -429,6 +426,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     font-weight: bolder;
     font-size: 1.6rem;
     height: 65px;
+    color: black;
 }
 
 .description p {
@@ -445,8 +443,9 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
 
 .links h3 {
     font-family: 'EB Garamond', serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     height: 45px;
+    font-weight: bolder;
 }
 
 .links ol {
