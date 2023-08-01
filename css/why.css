@@ -30,7 +30,9 @@
 
 
 
-
+body{
+  background-color: #FEFEFA;
+}
 
 
 
@@ -59,10 +61,6 @@
   }
  .why-content>p{
     font-size: 10px;
-  }
- .img-animation>img{
-    /* display: none; */
-    /* position: absolute; */
   }
   
   
@@ -130,7 +128,8 @@
   }
   
   .flip-box-front {
-       background-color: rgb(22, 22, 22);
+       background-color:#E6E6FA;
+       color: black;
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -149,7 +148,8 @@
   }
   
   .flip-box-back {
-    background-color: black;
+    background-color: #010B13;
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -215,7 +215,7 @@
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 2px;
-    color: #fff;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -315,7 +315,8 @@
   }
   
   .flip-box-front {
-       background-color: rgb(22, 22, 22);
+       background-color:#E6E6FA;
+       color: black;
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -334,7 +335,8 @@
   }
   
   .flip-box-back {
-    background-color: black;
+    background-color: #010B13;
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -398,7 +400,7 @@
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 2px;
-    color: #fff;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -495,7 +497,8 @@
   }
   
   .flip-box-front {
-       background-color: rgb(22, 22, 22);
+       background-color:#E6E6FA;
+       color: black;
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -514,7 +517,8 @@
   }
   
   .flip-box-back {
-    background-color: black;
+    background-color: #010B13;
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -578,7 +582,7 @@
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 2px;
-    color: #fff;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -675,7 +679,8 @@
   }
   
   .flip-box-front {
-       background-color: rgb(22, 22, 22);
+       background-color:#E6E6FA;
+       color: black;
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -694,7 +699,8 @@
   }
   
   .flip-box-back {
-    background-color: black;
+    background-color: #010B13;
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -758,7 +764,7 @@
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 2px;
-    color: #fff;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -850,7 +856,8 @@
   }
   
   .flip-box-front {
-       background-color: rgb(22, 22, 22);
+       background-color:#E6E6FA;
+       color: black;
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -869,7 +876,8 @@
   }
   
   .flip-box-back {
-    background-color: black;
+    background-color: #010B13;
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -936,7 +944,7 @@
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 2px;
-    color: #fff;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -1034,7 +1042,8 @@ scroll-behavior: none;
   }
   
   .flip-box-front {
-       background-color: rgb(22, 22, 22);
+       background-color:#E6E6FA;
+       color: black;
     -ms-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -1053,7 +1062,8 @@ scroll-behavior: none;
   }
   
   .flip-box-back {
-    background-color: black;
+    background-color: #010B13;
+    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -1120,7 +1130,7 @@ scroll-behavior: none;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 2px;
-    color: #fff;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
