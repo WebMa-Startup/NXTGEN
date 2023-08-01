@@ -114,7 +114,9 @@ nav {
     height: max-content;
     font-size: 5rem;
     margin-top: 3rem;
-    color: white;
+   color:black;
+          
+        
 }
 
 .text-holder span {
@@ -123,11 +125,11 @@ nav {
     font-size: 1.3rem;
     margin-top: 1.5rem;
     display: block;
-    color: white;
+    color:black;
 }
 
 .text-holder i {
-    color: orange;
+    color:black;
 
 }
 

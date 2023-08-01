@@ -141,7 +141,26 @@ html {
 
     to {
         transform: translateY(-28rem);
+        opacity: 1;
     }
+
+}
+
+.bow-arrow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-3rem ;
+}
+.bow-arrow img{
+    height: 200px;
+    transform: rotate(180deg);
+}
+
+.arrow{
+    display: flex;
+    position: relative;
 
 }
 
@@ -183,13 +202,22 @@ html {
     font-family: 'EB Garamond', serif;
     font-size: 3rem;
     font-weight: bolder;
+
+/* color: #9c27b0; background-image: -webkit-linear-gradient(0deg, #9c27b0 0%, #3f51b5 0%, #8900a1 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent; */
+color: #cf4b17; background-image: -webkit-linear-gradient(0deg, #cf4b17 6%, #0c27ee 68%, #624149 86%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
+          
+        
 }
 
 .sub-text {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6em;
+    font-weight: bolder;
+    font-size: 1.4rem;
     margin-top: 1rem;
+    color: #9c27b0; background-image: -webkit-linear-gradient(0deg, #9c27b0 0%, #3f51b5 0%, #8900a1 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
 }
 
 /*  todo                       button styles      */
@@ -197,10 +225,11 @@ html {
 
     text-align: center;
     font-family: 'Chela One', cursive;
-    margin-top: -10rem;
+    margin-top: -8rem;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    padding-bottom: 5rem;
 }
 
 .button a {
@@ -477,12 +506,12 @@ strong {
 /* todo                   main-img-01     */
 .main-img-holder {
     overflow-x: hidden;
-    margin-top: -1rem;
     height: 320px;
-    background-image: url(../assets/Digital\ tools-bro.svg);
+    background-image: url(../assets/Digital\ lifestyle-pana.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    margin-top: 2rem;
 }
 
 .first-content-holder {
@@ -593,6 +622,7 @@ strong {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(../assets/Idea.png);
+        
 }
 
 .second-sub-text {
@@ -609,6 +639,7 @@ strong {
     border-radius: 10px;
     margin-bottom: 1.5rem;
     background-color: #F5F5F5;
+    padding-left:15px ;
 }
 
 .card-holder {
@@ -617,7 +648,7 @@ strong {
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    padding-inline: 25px;
+    padding-inline: 15px;
 
 
 }
