@@ -1441,3 +1441,75 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BFD1EC", en
 }
 
 /* todo                         footer CSS                       */
+nav {
+    display: flex !important;
+
+    justify-content: center !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*  End Global Reset */
+
+
+/*                            navbar CSS                    */
+.navbar-brand>.brand-img {
+
+    height: 2.3em;
+    width: 9em;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+}
+
+.nav-container button {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.nav-container {
+    background: rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 15px 1px  #ffdf00; */
+    box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
+    position: fixed;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    width: 90%;
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+.navbar-link .nav-link {
+    /* color: white !important; */
+    color: black;
+    font-family: 'Bacasime Antique', serif;
+    /* font-family: 'VT323', monospace; */
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.navbar-nav a {
+    text-align: center;
+}
+
+.navbar-nav a:hover {
+    background-color: white;
+    border-radius: 10px;
+}
