@@ -1,5 +1,392 @@
-/* todo          Imports                 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 820px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+  background-color: #1abc9c;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, transparent 20%, #149279);
+  position: absolute;
+}
+
+.circle.one {
+  width: 130px;
+  height: 130px;
+  top: 130px;
+  right: -40px;
+}
+
+.circle.two {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 30px;
+}
+
+.contact-form:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #1abc9c;
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #fafafa;
+  font-size: 0.9rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+.btn {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color: #1abc9c;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 50%;
+}
+
+.input-container span:after {
+  right: 50%;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info .title {
+  color: #1abc9c;
+}
+
+.text {
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+  display: flex;
+  color: #555;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.icon {
+  width: 28px;
+  margin-right: 0.7rem;
+}
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+.social-media p {
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #1abc9c, #149279);
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.05);
+}
+
+.contact-info:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  border: 22px solid #1abc9c;
+  border-radius: 50%;
+  bottom: -77px;
+  right: 50px;
+  opacity: 0.3;
+}
+
+.big-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #1cd4af, #159b80);
+  bottom: 50%;
+  right: 50%;
+  transform: translate(-40%, 38%);
+}
+
+.big-circle:after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
+
+.square {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(181%, 11%);
+  opacity: 0.2;
+}
+
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .square {
+    transform: translate(140%, 43%);
+    height: 350px;
+  }
+
+  .big-circle {
+    bottom: 75%;
+    transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .contact-info:before {
+    display: none;
+  }
+
+  .square,
+  .big-circle {
+    display: none;
+  }
+
+  form,
+  .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .text,
+  .information,
+  .social-media p {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .icon {
+    width: 23px;
+  }
+
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+
+  .btn {
+    padding: 0.45rem 1.2rem;
+  }
+}
+/*  */
+/*  CSS IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Chela+One&family=Cormorant+Garamond:ital@1&family=EB+Garamond&family=Lilita+One&family=Lugrasimo&family=Roboto+Mono&display=swap');
+
+
 
 /*
 font-family: 'Bacasime Antique', serif;
@@ -11,17 +398,33 @@ font-family: 'Lugrasimo', cursive;
 font-family: 'Roboto Mono', monospace;
  */
 
+/* Global Reset */
+* {
 
-/*                            navbar CSS                    */
+    margin: 0;
+    padding: 0;
+}
+
+/* -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+*::-webkit-scrollbar{
+    display: none;
+} */
 nav {
     display: flex !important;
+
     justify-content: center !important;
 }
 
-.navbar {
-    padding: 0 0 !important;
+html {
+    scroll-behavior: smooth;
 }
 
+/*  End Global Reset */
+
+
+/*                            navbar CSS                    */
 .navbar-brand>.brand-img {
 
     height: 2.3em;
@@ -64,6 +467,7 @@ nav {
 }
 
 .navbar-link .nav-link {
+    /* color: white !important; */
     color: black;
     font-family: 'Bacasime Antique', serif;
     /* font-family: 'VT323', monospace; */
@@ -76,269 +480,452 @@ nav {
 }
 
 .navbar-nav a:hover {
-    background-color: #0c0c0cce;
+    background-color: white;
     border-radius: 10px;
 }
 
 /*                          End Of Nav CSS                  */
 
-.about-holder {
-    height: 65svh;
-    background-image: url(../assets/About\ me-pana.svg);
-    /* background-image: url(https://www.joshwcomeau.com/_next/image/?url=%2Fimages%2Fshadow-palette%2Fslopes.png&w=3840&q=75); */
-    /* background-image: url(https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-origin: border-box;
-    /* background-image: url(https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80); */
+
+/*  ? Header content CSS */
+
+/* todo                             content-holder */
+
+.box1 img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 9rem;
+    left: 1rem;
+    animation: 1s rotate ease-out infinite;
 }
 
-.text-holder {
-    text-align: center;
+.box2 img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20rem;
+    right: 0;
+    animation: 3s goUp linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+
+}
+@keyframes goUp {
+    from {
+        transform: translateY(20rem);
+    }
+
+    to {
+        transform: translateY(-28rem);
+        opacity: 1;
+    }
+
+}
+
+.bow-arrow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-3rem ;
+}
+.bow-arrow img{
+    height: 200px;
+    transform: rotate(180deg);
+}
+
+.arrow{
+    display: flex;
+    position: relative;
+
+}
+
+/* elements css */
+
+.header {
+    background-image: url(https://img.freepik.com/free-vector/abstract-white-shapes-background_79603-1362.jpg?size=626&ext=jpg&ga=GA1.2.1036119937.1690626197&semt=ais);
+
+    /* background-image: url(https://t3.ftcdn.net/jpg/06/17/05/64/240_F_617056461_BnlQ54GwARztQebtJFdYBQtBjJ1rLQfg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-holder {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 65svh;
-    width: 100%;
-    background: rgba(14, 14, 14, 0.14);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    font-weight: bolder;
+    /* background: url(../assets/log-in-girl.svg); */
+    /* background: url(https://img.freepik.com/free-vector/white-minimal-hexagons-background_79603-1452.jpg?size=626&ext=jpg&ga=GA1.1.1036119937.1690626197&semt=ais); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.text-holder h1 {
-    font-family: 'EB Garamond', serif;
-    height: max-content !important;
+.sub-holder {
+    /* background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px); */
+}
+
+.main-text {
     height: max-content;
-    font-size: 5rem;
-    margin-top: 3rem;
-   color:black;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    font-weight: bolder;
+
+/* color: #9c27b0; background-image: -webkit-linear-gradient(0deg, #9c27b0 0%, #3f51b5 0%, #8900a1 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent; */
+color: #cf4b17; background-image: -webkit-linear-gradient(0deg, #cf4b17 6%, #0c27ee 68%, #624149 86%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
           
         
 }
 
-.text-holder span {
-    font-family: 'EB Garamond', serif;
+.sub-text {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
-    font-size: 1.3rem;
-    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    color: #9c27b0; background-image: -webkit-linear-gradient(0deg, #9c27b0 0%, #3f51b5 0%, #8900a1 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+
+/*  todo                       button styles      */
+.button {
+
+    text-align: center;
+    font-family: 'Chela One', cursive;
+    margin-top: -8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.button a {
+    text-decoration: none;
+    color: white !important;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px rgb(17, 16, 16);
+    z-index: 2;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 3rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121), linear-gradient(137.48deg, #ffdb3b 10%, #FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+}
+
+strong {
+    z-index: 2;
+    font-family: 'Avalors Personal Use';
+    font-size: 12px;
+    letter-spacing: 5px;
+
+}
+
+#glow {
+    position: absolute;
+    display: flex;
+    width: 20rem;
+    height: 2.5rem;
+}
+
+.circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+}
+
+.btn-1:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+}
+
+.btn-1:hover {
+    transform: scale(1.1)
+}
+
+.btn-1:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+
+.btn-1:active .circle {
+    background: #FE53BB;
+}
+
+#stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+}
+
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-135rem);
+    }
+}
+
+@keyframes animStarRotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient_301 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse_3011 {
+    0% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+/* todo                        end of btn styles    */
+
+/*  todo                    End Of  content-holder      */
+
+/*       ?          svg divider           */
+
+.custom-shape-divider-top-1689413258 {
+    position: absolute;
+    margin-top: 1rem;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -5;
+}
+
+.custom-shape-divider-top-1689413258 svg {
+    position: relative;
     display: block;
-    color:black;
+    width: calc(100% + 1.3px);
+    height: 86px;
 }
 
-.text-holder i {
-    color:black;
-
+.custom-shape-divider-top-1689413258 .shape-fill {
+    fill: #141414;
 }
 
-/*                   todo     container-01 css */
-.about-us-container-01 {
-    /* background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(33,32,32,1) 100%);
-    color: white; */
-    /* background: hsla(222, 66%, 77%, 1);
+/*  ? End of svg divider */
 
-background: linear-gradient(90deg, hsla(222, 66%, 77%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(222, 66%, 77%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(222, 66%, 77%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", endColorstr="#B9DCF2", GradientType=1 ); */
-}
-
-.about-us-container-01 h1 {
-    font-size: 2.5rem;
-    font-weight: bolder;
+/*  todo                   digital verse text           */
+.digital-verse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    position: relative;
+    z-index: 2;
     margin-top: 1.5rem;
-    font-family: 'Bacasime Antique', serif
+    margin-left: .5rem;
+    font-weight: bolder;
+    animation: focus-in-contract 1s linear 0s 1 normal none;
 }
 
-.about-us-container-01 p {
-    font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-block: 1rem;
+@keyframes focus-in-contract {
+
+    0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
 }
 
-.about-img-holder-01 {}
+/* todo             Digital verse End       */
 
-.about-img-1,
-.about-img-2,
-.about-img-3 {
-    background-color: rgb(27, 27, 27);
-    border-radius: 25px;
-    margin-block: 1rem;
-    /* background:#FFFFFF ; */
-    /* background: linear-gradient(145deg, #FFFFFF, #D2D2D2);
-    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF; */
+/*  ?               Astronut css styles      */
 
-    background-image: url(https://img.freepik.com/free-vector/purple-fluid-background-frame_53876-99020.jpg?size=626&ext=jpg);
+.astronut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* animation: 2s  infinite linear spin; */
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* .main-astro-bg-holder{
+    background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+    background-size:cover;
     background-repeat: no-repeat;
-    background-size: cover;
+} */
+.astro-img img {
+    /* height: 7em;
+    margin-top: -1.15rem; */
+    /* position: absolute; */
 }
 
+/*  ?            END  Astronut css styles     */
 
-.about-img-2 {
-    height: 250px;
-    width: 100%;
+/* todo                   main-img-01     */
+.main-img-holder {
+    overflow-x: hidden;
+    height: 320px;
+    background-image: url(../assets/Digital\ lifestyle-pana.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 2rem;
 }
 
-/*   todo                    Fun fact CSS */
-
-.fun-fact-holder {
-    /* background: linear-gradient(0deg, rgba(0,0,0,1) 28%, rgba(33,32,32,1) 100%); */
-    /* background: hsla(313, 39%, 93%, 1);
-
-    background: linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(237, 66%, 72%, 1) 0%, hsla(193, 81%, 84%, 1) 100%);
-
-    background: -moz-linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(237, 66%, 72%, 1) 0%, hsla(193, 81%, 84%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(313, 39%, 93%, 1) 0%, hsla(237, 66%, 72%, 1) 0%, hsla(193, 81%, 84%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F4E6F1", endColorstr="#8A8EE7", GradientType=1);
-    padding-bottom: 3rem;
-    padding-top: 1rem; */
+.first-content-holder {
+    /* background-color: #EDF7FE; */
+    padding-inline: 15px;
 }
 
-.fun-content-holder {}
+.main-first-holder {
+    background-color: white;
+}
 
-.fun-content-holder h1 {
-    font-size: 3rem;
-    font-weight: bolder;
-    margin-top: 1.5rem;
-    font-family: 'Bacasime Antique', serif;
+.first-content-header {
+    font-family: 'Chela One', cursive;
+    font-size: 2.5rem;
     text-align: center;
-    /* color: #f7ba53; */
-    color: rgb(25, 0, 255);
+    background-image: url(../assets/Abstract\ Triangle.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.fun-content-holder p {
+.first-header-content {
     text-align: justify;
     font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-block: 1rem;
-    margin-block: 1.4rem;
-    /* color: white; */
+    font-size: 1.2em;
 }
 
-.wrapper {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 25px;
-
-}
-
-.container-loader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: calc(100% - 20%);
-    border-radius: 10px;
-    font-family: 'EB Garamond', serif;
-    background: linear-gradient(145deg, #FFFFFF, #f0eeee);
-    box-shadow: 9.91px 9.91px 15px #E8E8E8, -9.91px -9.91px 15px #FFFFFF;
-
-
-}
-
-
-.container-loader i {
-    font-size: 3.5rem;
-    color: blue;
-}
-
-.container-loader .num {
-    font-size: 2.5rem;
-    color: #0000FF;
-    font-size: bolder;
-}
-
-.container-loader .text {
-    font-size: 1.7rem;
-    /* color: #f7ba53; */
-    color: blue;
-    font-weight: bolder;
-    margin-block: 1rem;
-}
-
-/* todo                        mission CSS                            */
-.vision-holder {
-    margin-block: 1.5rem;
-}
-
-.mission-img {
-    margin-top: 1.5rem;
-}
-
-.mission-img img {
-    width: 100%;
-}
-
-.mission-holder {
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 1.5rem;
-}
-
-.mission-holder h1 {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    margin-top: 1.5rem;
-    font-family: 'Bacasime Antique', serif;
-    color: blue;
-}
-
-.mission-holder i {
-    color: blue;
-    margin-inline: 1rem;
-}
-
-.mission-holder p {
-
-    font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-block: 1rem;
-}
-
-/* todo                     Brand Purpose CSS                 */
-.brand-purpose img {
-    height: max-content;
-}
-
-.brand-purpose h1 {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    margin-top: 1.5rem;
-    font-family: 'Bacasime Antique', serif;
-    color: #6640AA;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.brand-purpose p {
-    font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-block: 1rem;
-}
-
-.brand-purpose span {
-    color: #6640AA;
-    font-weight: bold;
-}
-
-.third-btn a {
+/* todo                 Mian first content button         */
+.first-btn a {
     text-decoration: none;
     color: white;
 
@@ -350,7 +937,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     padding: 12px 18px;
     transition: all 0.2s ease;
     border: 2px #00236B solid;
-    background: #6640AA;
+    background: #F27F3D;
     border-radius: 25px;
     margin-block: 2.8rem;
 }
@@ -373,7 +960,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: white;
+    stroke: #234567;
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all 0.3s ease;
@@ -392,6 +979,384 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     transform: scale(0.95);
 }
 
+/* todo                main Second content css       */
+
+.main-second {
+    background-color: white;
+}
+
+.second-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.second-img img {
+    height: 100px;
+    width: 100px;
+}
+
+.second-main-text {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Bacasime Antique', serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/Idea.png);
+        
+}
+
+.second-sub-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 3rem;
+    /* font-family: 'Bacasime Antique', serif */
+}
+
+/* todo                main-second card Css */
+.main-second-card {
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background-color: #F5F5F5;
+    padding-left:15px ;
+}
+
+.card-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding-inline: 15px;
+
+
+}
+
+.card-img img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-header {
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    font-size: 1.9rem;
+    margin-block: 1rem;
+}
+
+.card-content {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: justify !important;
+}
+
+/* todo                       End Of Main Second Division CSS  */
+
+/* todo                           third  Division CSS         */
+.third-holder {
+    /* background-image: url(../assets/blob-scene-haikei-md-white.svg); */
+}
+
+.third-holder-01,
+third-holder-02,
+third-holder-03 {
+    /* background-image: url(../../../Downloads/wave-haikei\ \(1\).svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #F5F5F5;
+}
+
+.third-header {
+    text-align: center;
+    background-image: url(../assets/Flash\ Sale.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-header h2 {
+    font-size: 3rem !important;
+    font-weight: bolder !important;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: 'Bacasime Antique', serif;
+}
+
+.third-first {
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -1rem;
+}
+
+.third-first-content {}
+
+.img-1 {
+    background-image: url(../assets/Digital\ transformation-bro.svg);
+    background-size: contain;
+}
+
+.img-2 {
+    background-image: url(../assets/customer-relationship-management-animate.svg);
+    background-size: contain;
+}
+
+.img-3 {
+    background-image: url(../assets/ecommerce-campaign-animate.svg);
+    background-size: contain;
+}
+
+/* first header */
+.first-header {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    /* margin-top: 1rem;
+    padding-block: 20px; */
+}
+
+.first-content {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+
+.third-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.third-btn {
+    margin-top: 2rem;
+}
+
+/* todo   End Of third  Division CSS*/
+
+/* todo  fourth-header Division CSS */
+.fourth-holder {
+    background-color: #F5F5F5;
+    padding-bottom: 1.5rem;
+}
+
+.fourth-header h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 2rem;
+    padding-block: 20px;
+    text-align: center;
+    background-image: url(../assets/One\ Day\ Sale.png);
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fourth-card-01,
+.fourth-card-02 {
+    padding: 0 25px;
+    /* display: flex;
+    gap: 2rem; */
+}
+
+.fourth-card-01 .header-01,
+.fourth-card-02 .header-02 {
+    margin-top: .6rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    /* padding-block: 20px; */
+}
+
+.fourth-card-01 .content-01,
+.fourth-card-02 .content-02 {
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+
+.fourth-card-01 .inner-holder,
+.fourth-card-02 .inner-holder {
+    margin-block: 2.5rem;
+    /* padding-block: 2.5rem; */
+
+}
+
+.fourth-card-01,
+.fourth-card-02 {
+    background-color: white;
+
+}
+
+/* todo                 End of  fourth-header Division CSS */
+
+/* todo                        Review Section CSS           */
+.review {
+    /* background-color: #F2FEDC; */
+    background-image: url();
+    /* margin-bottom: 1rem; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #EDF7FE;
+    padding-bottom: 1.5rem;
+}
+
+.slider-holder {
+    /* background-image: url(../assets/wave-haikei.svg); */
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 80vh; */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 1rem;
+}
+
+.review-header {
+    background-image: url(../assets/Balloons.png);
+    background-position-x: center;
+    background-position-y: -100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+}
+
+.review-header h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.review-holder {
+    margin-top: 1.3rem;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 10px #ffa500 solid;
+    border-radius: 100px;
+    margin-inline: .5rem;
+}
+
+.customer-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.customer-review p {
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    margin-block: 1rem;
+    margin-inline: .8rem;
+}
+
+.customer-name {
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-inline: .5rem;
+}
+
+.btn-holder {
+    margin-block: 1rem;
+    cursor: pointer;
+    margin-inline: .5rem;
+
+}
+
+.btn-holder button {
+    margin-right: .8rem;
+    border: none;
+    background: transparent;
+}
+
+/* todo                   End Of Review Section CSS              */
+
+/*  todo              frequently asked question section          */
+.faq {
+    /* background-color:#F9F871; */
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-bottom: 2px black solid;
+    /* background: hsla(216, 54%, 84%, 1);
+
+background: linear-gradient(90deg, hsla(216, 54%, 84%, 1) 0%, hsla(216, 82%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(216, 54%, 84%, 1) 0%, hsla(216, 82%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(216, 54%, 84%, 1) 0%, hsla(216, 82%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BFD1EC", endColorstr="#83B0F3", GradientType=1 ); */
+    padding-bottom: .5rem;
+}
+
+.main-faq {
+    margin-bottom: 3rem;
+}
+
+.main-faq h2 {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 1.3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../assets/QA.png);
+}
+
+.question {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-inline: 0.5rem;
+    padding-inline: 25px;
+    position: relative;
+}
+
+.plus {
+    float: right;
+    font-size: 1.7rem;
+}
+
+.question p {
+    border-bottom: 2px black solid;
+    padding-bottom: 10px;
+}
+
+/*  todo               frequently asked question section          */
+
 /* todo                         footer CSS                       */
 
 .footer {
@@ -406,6 +1371,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
 .footer-logo {
     margin-inline: 0 !important;
     height: 80px;
+    padding-top: 1rem;
 }
 
 .footer-logo img {
@@ -428,7 +1394,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     font-weight: bolder;
     font-size: 1.6rem;
     height: 65px;
-    color: black;
 }
 
 .description p {
@@ -440,7 +1405,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
 
 .links {
     text-align: center;
-    margin-top: 2%;
 }
 
 .links h3 {
@@ -448,12 +1412,13 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     font-size: 1.8rem;
     height: 45px;
     font-weight: bolder;
+    border-bottom: 2px orange solid;
+    display: inline-block;
 }
 
 .links ol {
     padding: 0 !important;
     list-style: none;
-
 }
 
 .links ol li a {
@@ -469,6 +1434,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9DB4EB", en
     text-align: center;
     margin-top: .4rem;
     font-weight: bold;
+}
+
+.copyright p {
+    margin-bottom: 0;
 }
 
 /* todo                         footer CSS                       */
