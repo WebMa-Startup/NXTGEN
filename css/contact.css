@@ -1513,3 +1513,89 @@ html {
     background-color: white;
     border-radius: 10px;
 }
+
+
+/* footer css */
+
+.footer {
+    background-color: #FFFFFF;
+    /* background: linear-gradient(90deg, rgba(249,248,113,1) 10%, rgba(246,220,142,1) 69%); */
+}
+
+.footer-holder {
+    border-bottom: 2px black solid;
+}
+
+.footer-logo {
+    margin-inline: 0 !important;
+    height: 80px;
+    padding-top: 1rem;
+}
+
+.footer-logo img {
+    height: 60px;
+    will-change: scroll-position;
+    width: 200px;
+    margin-top: 1rem;
+    box-shadow: 0px 0px 10px 1px #FFD700, 0px 0px 6px 1px #ffbb00, 0px 0px 6px 1px #ffc400;
+
+}
+
+.description {
+    margin-block: 1.5rem;
+    overflow: hidden !important;
+}
+
+.description h3 {
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    height: 65px;
+}
+
+.description p {
+    text-align: justify;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    margin-block: 1rem;
+}
+
+.links {
+    text-align: center;
+}
+
+.links h3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.8rem;
+    height: 45px;
+    font-weight: bolder;
+    border-bottom: 2px orange solid;
+    display: inline-block;
+}
+
+.links ol {
+    padding: 0 !important;
+    list-style: none;
+}
+
+.links ol li a {
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+    color: rgb(43, 43, 43);
+}
+
+.copyright {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .4rem;
+    font-weight: bold;
+}
+
+.copyright p {
+    margin-bottom: 0;
+}
+
+/* todo                         footer CSS                       */
